@@ -1,0 +1,21 @@
+usb\usb.c
+usb\usb_rx.s
+usb\usb_tx.s
+hardware.c
+lib\src\stm8s_flash.c
+main.c
+stm8_interrupt_vector.c
+usb\usb_desc.c
+hardware.h
+irq.h
+lib\inc\stm8s.h
+lib\inc\stm8s_conf.h
+usb\usb.h
+usb\usb_desc.h
+..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\mods0.h
+..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h
+lib\inc\stm8s_flash.h
+lib\inc\stm8s_wwdg.h
+main.h
+stm8_interrupt_vector.h
+usb-config.h

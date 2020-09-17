@@ -1,0 +1,38 @@
+;	STMicroelectronics dependencies file
+
+[Version]
+Keyword=ST7Project
+Number=1.3
+
+[Root.Source Files.Source Files\USB.usb\usb.c.Config.0]
+ExternDep= usb\usb.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" usb\usb.h  hardware.h lib\inc\stm8s.h lib\inc\stm8s_conf.h lib\inc\stm8s_flash.h  lib\inc\stm8s_wwdg.h  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\stdio.h"  usb-config.h usb_desc.h
+
+[Root.Source Files.Source Files\USB.usb\usb.c.Config.1]
+ExternDep= usb\usb.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" usb\usb.h  hardware.h lib\inc\stm8s.h lib\inc\stm8s_conf.h lib\inc\stm8s_flash.h  lib\inc\stm8s_wwdg.h  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\stdio.h"  usb\usb_desc.h
+
+[Root.Source Files.hardware.c.Config.0]
+ExternDep= hardware.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" hardware.h  lib\inc\stm8s.h lib\inc\stm8s_conf.h lib\inc\stm8s_flash.h  lib\inc\stm8s_wwdg.h  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\stdio.h" usb\usb.h  usb-config.h usb_desc.h
+
+[Root.Source Files.hardware.c.Config.1]
+ExternDep= hardware.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" hardware.h  lib\inc\stm8s.h lib\inc\stm8s_conf.h lib\inc\stm8s_flash.h  lib\inc\stm8s_wwdg.h  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\stdio.h" usb\usb.h  usb\usb_desc.h
+
+[Root.Source Files.lib\src\stm8s_flash.c.Config.0]
+ExternDep= lib\src\stm8s_flash.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h"  lib\inc\stm8s_flash.h lib\inc\stm8s.h lib\inc\stm8s_conf.h  lib\inc\stm8s_wwdg.h
+
+[Root.Source Files.lib\src\stm8s_flash.c.Config.1]
+ExternDep= lib\src\stm8s_flash.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h"  lib\inc\stm8s_flash.h lib\inc\stm8s.h lib\inc\stm8s_conf.h  lib\inc\stm8s_wwdg.h
+
+[Root.Source Files.main.c.Config.0]
+ExternDep= main.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" main.h  lib\inc\stm8s.h lib\inc\stm8s_conf.h lib\inc\stm8s_flash.h  lib\inc\stm8s_wwdg.h usb\usb.h hardware.h  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\stdio.h"  usb-config.h usb_desc.h
+
+[Root.Source Files.main.c.Config.1]
+ExternDep= main.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" main.h  lib\inc\stm8s.h lib\inc\stm8s_conf.h lib\inc\stm8s_flash.h  lib\inc\stm8s_wwdg.h usb\usb.h hardware.h  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\stdio.h"  usb\usb_desc.h
+
+[Root.Source Files.stm8_interrupt_vector.c.Config.0]
+ExternDep= stm8_interrupt_vector.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" irq.h  stm8_interrupt_vector.h
+
+[Root.Source Files.stm8_interrupt_vector.c.Config.1]
+ExternDep= stm8_interrupt_vector.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" irq.h  stm8_interrupt_vector.h
+
+[Root.Source Files.usb_desc.c.Config.0]
+ExternDep= usb_desc.c  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\mods0.h" usb\usb.h  hardware.h lib\inc\stm8s.h lib\inc\stm8s_conf.h lib\inc\stm8s_flash.h  lib\inc\stm8s_wwdg.h  "C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\HSTM8\stdio.h"  usb-config.h usb_desc.h
