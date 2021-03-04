@@ -161,7 +161,7 @@ void USB_connect(void);
 void USB_disconnect(void);
 void USB_slow_loop(void);
 
-int8_t USB_Send_Data(uint8_t * buffer, uint8_t length, uint8_t EP_num);
+int8_t USB_Send_Data(uint8_t * buffer, uint16_t length, uint8_t EP_num);
 void USB_EP0_RxReady_callback(uint8_t *p_data, uint8_t length);
 void USB_EP1_RxReady_callback(uint8_t *p_data, uint8_t length);
 

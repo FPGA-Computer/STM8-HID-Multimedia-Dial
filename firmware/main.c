@@ -39,11 +39,11 @@ int8_t USB_Setup_Request_callback(t_USB_SetupReq *p_req)
 	// HID Class GetReport
   if (((p_req->bmRequest&USB_REQ_TYPE_MASK)==USB_REQ_TYPE_CLASS) && 
 			(p_req->bRequest==HID_REQ_GET_REPORT))
-  { 
-		// send empty packet
+	{
 		USB_Send_Data(NULL,0,0); 
+		return 0;
 	}
-
+	
 	return -1;
 }
 

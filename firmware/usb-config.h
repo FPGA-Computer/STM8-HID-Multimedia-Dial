@@ -6,6 +6,7 @@
 #define USB_MAX_NUM_INTERFACES 			1 // device interfaces
 #define USB_SELF_POWERED						0 // 0 - power from USB, 1 - dedicated power supply
 #define USB_CLOCK_HSI								1	// 0 - external frequency to 16 MHz (PA1, PA2); 1 - from the internal RC generator (HSI)
+//#define USB_CLOCK_HSI							0
 #define USB_CONNECT_TIMEOUT					700 // connection timeout before reset // 100Hz * 7 sec = 700
 #define USB_RECONNECT_DELAY					100 // 100Hz * 1 sec = 100
 
