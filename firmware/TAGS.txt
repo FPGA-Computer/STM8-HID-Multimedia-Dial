@@ -52,14 +52,14 @@ ADC2_TDRH_RESET_VALUE	lib\inc\stm8s.h	405;"	macro
 ADC2_TDRL_RESET_VALUE	lib\inc\stm8s.h	404;"	macro
 ADC2_TypeDef	lib\inc\stm8s.h	396;"	typedef	typeref:struct:ADC2_struct
 ADC2_struct	lib\inc\stm8s.h	385;"	struct
-AFR0	hardware.h	51;"	enumerator	enum:_OPT2
-AFR1	hardware.h	51;"	enumerator	enum:_OPT2
-AFR2	hardware.h	51;"	enumerator	enum:_OPT2
-AFR3	hardware.h	51;"	enumerator	enum:_OPT2
-AFR4	hardware.h	51;"	enumerator	enum:_OPT2
-AFR5	hardware.h	51;"	enumerator	enum:_OPT2
-AFR6	hardware.h	51;"	enumerator	enum:_OPT2
-AFR7	hardware.h	51;"	enumerator	enum:_OPT2
+AFR0	hardware.h	48;"	enumerator	enum:_OPT2
+AFR1	hardware.h	48;"	enumerator	enum:_OPT2
+AFR2	hardware.h	48;"	enumerator	enum:_OPT2
+AFR3	hardware.h	48;"	enumerator	enum:_OPT2
+AFR4	hardware.h	48;"	enumerator	enum:_OPT2
+AFR5	hardware.h	48;"	enumerator	enum:_OPT2
+AFR6	hardware.h	48;"	enumerator	enum:_OPT2
+AFR7	hardware.h	48;"	enumerator	enum:_OPT2
 APR	lib\inc\stm8s.h	438;"	member	struct:AWU_struct
 AREA	lib\inc\stm8s.h	2818;"	macro
 ARR	lib\inc\stm8s.h	1065;"	member	struct:TIM4_struct
@@ -108,17 +108,17 @@ BRR2	lib\inc\stm8s.h	1767;"	member	struct:UART1_struct
 BRR2	lib\inc\stm8s.h	1865;"	member	struct:UART2_struct
 BRR2	lib\inc\stm8s.h	1972;"	member	struct:UART3_struct
 BRR2	lib\inc\stm8s.h	2064;"	member	struct:UART4_struct
-BTR1	lib\inc\stm8s.h	2292;"	member	struct:__anon7::__anon8::__anon14
-BTR2	lib\inc\stm8s.h	2293;"	member	struct:__anon7::__anon8::__anon14
+BTR1	lib\inc\stm8s.h	2292;"	member	struct:__anon6::__anon7::__anon13
+BTR2	lib\inc\stm8s.h	2293;"	member	struct:__anon6::__anon7::__anon13
 BUFSIZ	..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h	26;"	macro
 BYTE_0	lib\inc\stm8s.h	2799;"	macro
 BYTE_1	lib\inc\stm8s.h	2800;"	macro
 BYTE_2	lib\inc\stm8s.h	2801;"	macro
 BYTE_3	lib\inc\stm8s.h	2802;"	macro
-BitAction	lib\inc\stm8s.h	232;"	typedef	typeref:enum:__anon4
+BitAction	lib\inc\stm8s.h	232;"	typedef	typeref:enum:__anon3
 BitClr	lib\inc\stm8s.h	2820;"	macro
 BitSet	lib\inc\stm8s.h	2821;"	macro
-BitStatus	lib\inc\stm8s.h	232;"	typedef	typeref:enum:__anon4
+BitStatus	lib\inc\stm8s.h	232;"	typedef	typeref:enum:__anon3
 BitVal	lib\inc\stm8s.h	2822;"	macro
 CAN	lib\inc\stm8s.h	2615;"	macro
 CAN_BTR1_RESET_VALUE	lib\inc\stm8s.h	2499;"	macro
@@ -255,7 +255,7 @@ CAN_TSR_RQCP2	lib\inc\stm8s.h	2350;"	macro
 CAN_TSR_TXOK0	lib\inc\stm8s.h	2352;"	macro
 CAN_TSR_TXOK1	lib\inc\stm8s.h	2353;"	macro
 CAN_TSR_TXOK2	lib\inc\stm8s.h	2354;"	macro
-CAN_TypeDef	lib\inc\stm8s.h	2323;"	typedef	typeref:struct:__anon7
+CAN_TypeDef	lib\inc\stm8s.h	2323;"	typedef	typeref:struct:__anon6
 CCER1	lib\inc\stm8s.h	1128;"	member	struct:TIM5_struct
 CCER1	lib\inc\stm8s.h	621;"	member	struct:TIM1_struct
 CCER1	lib\inc\stm8s.h	833;"	member	struct:TIM2_struct
@@ -436,17 +436,18 @@ CSR	lib\inc\stm8s.h	387;"	member	struct:ADC2_struct
 CSR	lib\inc\stm8s.h	437;"	member	struct:AWU_struct
 CSR	lib\inc\stm8s.h	477;"	member	struct:BEEP_struct
 CSSR	lib\inc\stm8s.h	513;"	member	struct:CLK_struct
-Check_OPTION_BYTE	hardware.c	51;"	function	signature:(void)
-Check_OPTION_BYTE	hardware.h	87;"	prototype	signature:(void)
+Check_OPTION_BYTE	hardware.c	129;"	function	signature:(void)
+Check_OPTION_BYTE	hardware.h	146;"	prototype	signature:(void)
 ChgBit	lib\inc\stm8s.h	2791;"	macro
 ClrBit	lib\inc\stm8s.h	2789;"	macro
-Clr_LCD_E	hardware.h	71;"	macro
-Clr_LCD_RS	hardware.h	75;"	macro
-Clr_LCD_RW	hardware.h	73;"	macro
-Clr_PC3	hardware.h	67;"	macro
-Clr_PC4	hardware.h	65;"	macro
-Clr_PC5	hardware.h	63;"	macro
-Config	lib\inc\stm8s.h	2301;"	member	union:__anon7::__anon8	typeref:struct:__anon7::__anon8::__anon14
+Cmd_Mute	hardware.h	141;"	enumerator	enum:REPORT_BITMAP
+Cmd_Next_Track	hardware.h	140;"	enumerator	enum:REPORT_BITMAP
+Cmd_Play_Pause	hardware.h	140;"	enumerator	enum:REPORT_BITMAP
+Cmd_Prev_Track	hardware.h	140;"	enumerator	enum:REPORT_BITMAP
+Cmd_Stop	hardware.h	140;"	enumerator	enum:REPORT_BITMAP
+Cmd_Volume_Down	hardware.h	141;"	enumerator	enum:REPORT_BITMAP
+Cmd_Volume_Up	hardware.h	141;"	enumerator	enum:REPORT_BITMAP
+Config	lib\inc\stm8s.h	2301;"	member	union:__anon6::__anon7	typeref:struct:__anon6::__anon7::__anon13
 DB0RH	lib\inc\stm8s.h	295;"	member	struct:ADC1_struct
 DB0RL	lib\inc\stm8s.h	296;"	member	struct:ADC1_struct
 DB1RH	lib\inc\stm8s.h	297;"	member	struct:ADC1_struct
@@ -469,9 +470,9 @@ DB9RH	lib\inc\stm8s.h	313;"	member	struct:ADC1_struct
 DB9RL	lib\inc\stm8s.h	314;"	member	struct:ADC1_struct
 DDR	lib\inc\stm8s.h	268;"	member	struct:GPIO_struct
 DEBUG_DEV_report	main.h	89;"	member	struct:s_HID_Dev
-DELAY_TWEAK	hardware.h	97;"	macro
-DGR	lib\inc\stm8s.h	2177;"	member	struct:__anon7
-DISABLE	lib\inc\stm8s.h	234;"	enumerator	enum:__anon5
+DELAY_TWEAK	hardware.h	90;"	macro
+DGR	lib\inc\stm8s.h	2177;"	member	struct:__anon6
+DISABLE	lib\inc\stm8s.h	234;"	enumerator	enum:__anon4
 DM	lib\inc\stm8s.h	2703;"	macro
 DM_BaseAddress	lib\inc\stm8s.h	2590;"	macro
 DR	lib\inc\stm8s.h	1331;"	member	struct:I2C_struct
@@ -487,13 +488,13 @@ DRL	lib\inc\stm8s.h	392;"	member	struct:ADC2_struct
 DTR	lib\inc\stm8s.h	639;"	member	struct:TIM1_struct
 DUKR	lib\inc\stm8s.h	1521;"	member	struct:FLASH_struct
 Default_IRQ_Handler	stm8_interrupt_vector.c	34;"	function	signature:(void)
-Delay	hardware.c	149;"	function	signature:(uint16_t t)
-Delay	hardware.h	91;"	prototype	signature:(uint16_t t)
+Delay	hardware.c	401;"	function	signature:(uint16_t t)
+Delay	hardware.h	148;"	prototype	signature:(uint16_t t)
 ECKR	lib\inc\stm8s.h	506;"	member	struct:CLK_struct
 EEPROM	lib\inc\stm8s.h	124;"	macro
 EEPROM	lib\inc\stm8s.h	130;"	macro
 EEPROM	lib\inc\stm8s.h	144;"	macro
-EEPROM_START_ADDR	usb-config.h	17;"	macro
+EEPROM_START_ADDR	usb-config.h	18;"	macro
 EE_Addr	hardware.h	46;"	macro
 EGR	lib\inc\stm8s.h	1062;"	member	struct:TIM4_struct
 EGR	lib\inc\stm8s.h	1124;"	member	struct:TIM5_struct
@@ -501,13 +502,25 @@ EGR	lib\inc\stm8s.h	1262;"	member	struct:TIM6_struct
 EGR	lib\inc\stm8s.h	616;"	member	struct:TIM1_struct
 EGR	lib\inc\stm8s.h	829;"	member	struct:TIM2_struct
 EGR	lib\inc\stm8s.h	953;"	member	struct:TIM3_struct
-EIER	lib\inc\stm8s.h	2289;"	member	struct:__anon7::__anon8::__anon14
-ENABLE	lib\inc\stm8s.h	234;"	enumerator	enum:__anon5
+EIER	lib\inc\stm8s.h	2289;"	member	struct:__anon6::__anon7::__anon13
+ENABLE	lib\inc\stm8s.h	234;"	enumerator	enum:__anon4
+ENC_CLK	hardware.h	77;"	macro
+ENC_DIR	hardware.h	78;"	macro
+ENC_FIRST	hardware.h	121;"	macro
+ENC_FIRST	hardware.h	131;"	macro
+ENC_LAST	hardware.h	120;"	macro
+ENC_LAST	hardware.h	130;"	macro
+ENC_PLAYCTRL	hardware.h	117;"	enumerator	enum:ENC_STATES
+ENC_PORT	hardware.h	76;"	macro
+ENC_STATES	hardware.h	115;"	enum
+ENC_SW	hardware.h	80;"	macro
+ENC_SW_PORT	hardware.h	79;"	macro
+ENC_VOLUME	hardware.h	117;"	enumerator	enum:ENC_STATES
 EOF	..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h	27;"	macro
 EP	usb\usb.h	141;"	member	struct:usb_type
 EP0_data_stage	usb\usb.h	140;"	member	struct:usb_type
-ERROR	lib\inc\stm8s.h	237;"	enumerator	enum:__anon6
-ESR	lib\inc\stm8s.h	2288;"	member	struct:__anon7::__anon8::__anon14
+ERROR	lib\inc\stm8s.h	237;"	enumerator	enum:__anon5
+ESR	lib\inc\stm8s.h	2288;"	member	struct:__anon6::__anon7::__anon13
 ETR	lib\inc\stm8s.h	612;"	member	struct:TIM1_struct
 EXT1_KB_Report	main.h	82;"	member	struct:s_HID_Dev
 EXT1_KB_Report_changed_flag	main.h	83;"	member	struct:s_HID_Dev
@@ -517,6 +530,7 @@ EXT2_KB_Report_changed_flag	main.h	85;"	member	struct:s_HID_Dev
 EXT2_KEYBOARD_USAGE_PAGE	main.h	10;"	macro
 EXTI	lib\inc\stm8s.h	2620;"	macro
 EXTI_BaseAddress	lib\inc\stm8s.h	2566;"	macro
+EXTI_CR1	hardware.h	82;"	macro
 EXTI_CR1_PAIS	lib\inc\stm8s.h	1493;"	macro
 EXTI_CR1_PBIS	lib\inc\stm8s.h	1492;"	macro
 EXTI_CR1_PCIS	lib\inc\stm8s.h	1491;"	macro
@@ -527,62 +541,73 @@ EXTI_CR2_RESET_VALUE	lib\inc\stm8s.h	1480;"	macro
 EXTI_CR2_TLIS	lib\inc\stm8s.h	1495;"	macro
 EXTI_TypeDef	lib\inc\stm8s.h	1473;"	typedef	typeref:struct:EXTI_struct
 EXTI_struct	lib\inc\stm8s.h	1468;"	struct
-ErrorStatus	lib\inc\stm8s.h	237;"	typedef	typeref:enum:__anon6
-F0R1	lib\inc\stm8s.h	2225;"	member	struct:__anon7::__anon8::__anon11
-F0R2	lib\inc\stm8s.h	2226;"	member	struct:__anon7::__anon8::__anon11
-F0R3	lib\inc\stm8s.h	2227;"	member	struct:__anon7::__anon8::__anon11
-F0R4	lib\inc\stm8s.h	2228;"	member	struct:__anon7::__anon8::__anon11
-F0R5	lib\inc\stm8s.h	2229;"	member	struct:__anon7::__anon8::__anon11
-F0R6	lib\inc\stm8s.h	2230;"	member	struct:__anon7::__anon8::__anon11
-F0R7	lib\inc\stm8s.h	2231;"	member	struct:__anon7::__anon8::__anon11
-F0R8	lib\inc\stm8s.h	2232;"	member	struct:__anon7::__anon8::__anon11
-F1R1	lib\inc\stm8s.h	2234;"	member	struct:__anon7::__anon8::__anon11
-F1R2	lib\inc\stm8s.h	2235;"	member	struct:__anon7::__anon8::__anon11
-F1R3	lib\inc\stm8s.h	2236;"	member	struct:__anon7::__anon8::__anon11
-F1R4	lib\inc\stm8s.h	2237;"	member	struct:__anon7::__anon8::__anon11
-F1R5	lib\inc\stm8s.h	2238;"	member	struct:__anon7::__anon8::__anon11
-F1R6	lib\inc\stm8s.h	2239;"	member	struct:__anon7::__anon8::__anon11
-F1R7	lib\inc\stm8s.h	2240;"	member	struct:__anon7::__anon8::__anon11
-F1R8	lib\inc\stm8s.h	2241;"	member	struct:__anon7::__anon8::__anon11
-F2R1	lib\inc\stm8s.h	2246;"	member	struct:__anon7::__anon8::__anon12
-F2R2	lib\inc\stm8s.h	2247;"	member	struct:__anon7::__anon8::__anon12
-F2R3	lib\inc\stm8s.h	2248;"	member	struct:__anon7::__anon8::__anon12
-F2R4	lib\inc\stm8s.h	2249;"	member	struct:__anon7::__anon8::__anon12
-F2R5	lib\inc\stm8s.h	2250;"	member	struct:__anon7::__anon8::__anon12
-F2R6	lib\inc\stm8s.h	2251;"	member	struct:__anon7::__anon8::__anon12
-F2R7	lib\inc\stm8s.h	2252;"	member	struct:__anon7::__anon8::__anon12
-F2R8	lib\inc\stm8s.h	2253;"	member	struct:__anon7::__anon8::__anon12
-F3R1	lib\inc\stm8s.h	2255;"	member	struct:__anon7::__anon8::__anon12
-F3R2	lib\inc\stm8s.h	2256;"	member	struct:__anon7::__anon8::__anon12
-F3R3	lib\inc\stm8s.h	2257;"	member	struct:__anon7::__anon8::__anon12
-F3R4	lib\inc\stm8s.h	2258;"	member	struct:__anon7::__anon8::__anon12
-F3R5	lib\inc\stm8s.h	2259;"	member	struct:__anon7::__anon8::__anon12
-F3R6	lib\inc\stm8s.h	2260;"	member	struct:__anon7::__anon8::__anon12
-F3R7	lib\inc\stm8s.h	2261;"	member	struct:__anon7::__anon8::__anon12
-F3R8	lib\inc\stm8s.h	2262;"	member	struct:__anon7::__anon8::__anon12
-F4R1	lib\inc\stm8s.h	2267;"	member	struct:__anon7::__anon8::__anon13
-F4R2	lib\inc\stm8s.h	2268;"	member	struct:__anon7::__anon8::__anon13
-F4R3	lib\inc\stm8s.h	2269;"	member	struct:__anon7::__anon8::__anon13
-F4R4	lib\inc\stm8s.h	2270;"	member	struct:__anon7::__anon8::__anon13
-F4R5	lib\inc\stm8s.h	2271;"	member	struct:__anon7::__anon8::__anon13
-F4R6	lib\inc\stm8s.h	2272;"	member	struct:__anon7::__anon8::__anon13
-F4R7	lib\inc\stm8s.h	2273;"	member	struct:__anon7::__anon8::__anon13
-F4R8	lib\inc\stm8s.h	2274;"	member	struct:__anon7::__anon8::__anon13
-F5R1	lib\inc\stm8s.h	2276;"	member	struct:__anon7::__anon8::__anon13
-F5R2	lib\inc\stm8s.h	2277;"	member	struct:__anon7::__anon8::__anon13
-F5R3	lib\inc\stm8s.h	2278;"	member	struct:__anon7::__anon8::__anon13
-F5R4	lib\inc\stm8s.h	2279;"	member	struct:__anon7::__anon8::__anon13
-F5R5	lib\inc\stm8s.h	2280;"	member	struct:__anon7::__anon8::__anon13
-F5R6	lib\inc\stm8s.h	2281;"	member	struct:__anon7::__anon8::__anon13
-F5R7	lib\inc\stm8s.h	2282;"	member	struct:__anon7::__anon8::__anon13
-F5R8	lib\inc\stm8s.h	2283;"	member	struct:__anon7::__anon8::__anon13
-FALSE	lib\inc\stm8s.h	230;"	enumerator	enum:__anon3
+Enc_State	hardware.c	256;"	variable	file:
+Encoder	hardware.c	31;"	variable
+Encoder_	hardware.c	30;"	variable
+Encoder_IRQ	hardware.c	244;"	function	signature:(void)
+Encoder_IRQ	irq.h	29;"	prototype	signature:(void)
+Encoder_Init	hardware.c	209;"	function	signature:(void)
+Encoder_Init	hardware.h	150;"	prototype	signature:(void)
+Encoder_Switch_Task	hardware.c	258;"	function	signature:(void)
+Encoder_Switch_Task	hardware.h	151;"	prototype	signature:(void)
+Encoder_Task	hardware.c	337;"	function	signature:(void)
+Encoder_Task	hardware.h	152;"	prototype	signature:(void)
+ErrorStatus	lib\inc\stm8s.h	237;"	typedef	typeref:enum:__anon5
+F0R1	lib\inc\stm8s.h	2225;"	member	struct:__anon6::__anon7::__anon10
+F0R2	lib\inc\stm8s.h	2226;"	member	struct:__anon6::__anon7::__anon10
+F0R3	lib\inc\stm8s.h	2227;"	member	struct:__anon6::__anon7::__anon10
+F0R4	lib\inc\stm8s.h	2228;"	member	struct:__anon6::__anon7::__anon10
+F0R5	lib\inc\stm8s.h	2229;"	member	struct:__anon6::__anon7::__anon10
+F0R6	lib\inc\stm8s.h	2230;"	member	struct:__anon6::__anon7::__anon10
+F0R7	lib\inc\stm8s.h	2231;"	member	struct:__anon6::__anon7::__anon10
+F0R8	lib\inc\stm8s.h	2232;"	member	struct:__anon6::__anon7::__anon10
+F1R1	lib\inc\stm8s.h	2234;"	member	struct:__anon6::__anon7::__anon10
+F1R2	lib\inc\stm8s.h	2235;"	member	struct:__anon6::__anon7::__anon10
+F1R3	lib\inc\stm8s.h	2236;"	member	struct:__anon6::__anon7::__anon10
+F1R4	lib\inc\stm8s.h	2237;"	member	struct:__anon6::__anon7::__anon10
+F1R5	lib\inc\stm8s.h	2238;"	member	struct:__anon6::__anon7::__anon10
+F1R6	lib\inc\stm8s.h	2239;"	member	struct:__anon6::__anon7::__anon10
+F1R7	lib\inc\stm8s.h	2240;"	member	struct:__anon6::__anon7::__anon10
+F1R8	lib\inc\stm8s.h	2241;"	member	struct:__anon6::__anon7::__anon10
+F2R1	lib\inc\stm8s.h	2246;"	member	struct:__anon6::__anon7::__anon11
+F2R2	lib\inc\stm8s.h	2247;"	member	struct:__anon6::__anon7::__anon11
+F2R3	lib\inc\stm8s.h	2248;"	member	struct:__anon6::__anon7::__anon11
+F2R4	lib\inc\stm8s.h	2249;"	member	struct:__anon6::__anon7::__anon11
+F2R5	lib\inc\stm8s.h	2250;"	member	struct:__anon6::__anon7::__anon11
+F2R6	lib\inc\stm8s.h	2251;"	member	struct:__anon6::__anon7::__anon11
+F2R7	lib\inc\stm8s.h	2252;"	member	struct:__anon6::__anon7::__anon11
+F2R8	lib\inc\stm8s.h	2253;"	member	struct:__anon6::__anon7::__anon11
+F3R1	lib\inc\stm8s.h	2255;"	member	struct:__anon6::__anon7::__anon11
+F3R2	lib\inc\stm8s.h	2256;"	member	struct:__anon6::__anon7::__anon11
+F3R3	lib\inc\stm8s.h	2257;"	member	struct:__anon6::__anon7::__anon11
+F3R4	lib\inc\stm8s.h	2258;"	member	struct:__anon6::__anon7::__anon11
+F3R5	lib\inc\stm8s.h	2259;"	member	struct:__anon6::__anon7::__anon11
+F3R6	lib\inc\stm8s.h	2260;"	member	struct:__anon6::__anon7::__anon11
+F3R7	lib\inc\stm8s.h	2261;"	member	struct:__anon6::__anon7::__anon11
+F3R8	lib\inc\stm8s.h	2262;"	member	struct:__anon6::__anon7::__anon11
+F4R1	lib\inc\stm8s.h	2267;"	member	struct:__anon6::__anon7::__anon12
+F4R2	lib\inc\stm8s.h	2268;"	member	struct:__anon6::__anon7::__anon12
+F4R3	lib\inc\stm8s.h	2269;"	member	struct:__anon6::__anon7::__anon12
+F4R4	lib\inc\stm8s.h	2270;"	member	struct:__anon6::__anon7::__anon12
+F4R5	lib\inc\stm8s.h	2271;"	member	struct:__anon6::__anon7::__anon12
+F4R6	lib\inc\stm8s.h	2272;"	member	struct:__anon6::__anon7::__anon12
+F4R7	lib\inc\stm8s.h	2273;"	member	struct:__anon6::__anon7::__anon12
+F4R8	lib\inc\stm8s.h	2274;"	member	struct:__anon6::__anon7::__anon12
+F5R1	lib\inc\stm8s.h	2276;"	member	struct:__anon6::__anon7::__anon12
+F5R2	lib\inc\stm8s.h	2277;"	member	struct:__anon6::__anon7::__anon12
+F5R3	lib\inc\stm8s.h	2278;"	member	struct:__anon6::__anon7::__anon12
+F5R4	lib\inc\stm8s.h	2279;"	member	struct:__anon6::__anon7::__anon12
+F5R5	lib\inc\stm8s.h	2280;"	member	struct:__anon6::__anon7::__anon12
+F5R6	lib\inc\stm8s.h	2281;"	member	struct:__anon6::__anon7::__anon12
+F5R7	lib\inc\stm8s.h	2282;"	member	struct:__anon6::__anon7::__anon12
+F5R8	lib\inc\stm8s.h	2283;"	member	struct:__anon6::__anon7::__anon12
+FALSE	lib\inc\stm8s.h	230;"	enumerator	enum:__anon2
 FAR	lib\inc\stm8s.h	121;"	macro
 FAR	lib\inc\stm8s.h	127;"	macro
 FAR	lib\inc\stm8s.h	141;"	macro
-FCR1	lib\inc\stm8s.h	2297;"	member	struct:__anon7::__anon8::__anon14
-FCR2	lib\inc\stm8s.h	2298;"	member	struct:__anon7::__anon8::__anon14
-FCR3	lib\inc\stm8s.h	2299;"	member	struct:__anon7::__anon8::__anon14
+FCR1	lib\inc\stm8s.h	2297;"	member	struct:__anon6::__anon7::__anon13
+FCR2	lib\inc\stm8s.h	2298;"	member	struct:__anon6::__anon7::__anon13
+FCR3	lib\inc\stm8s.h	2299;"	member	struct:__anon6::__anon7::__anon13
 FLASH	lib\inc\stm8s.h	2622;"	macro
 FLASH_BLOCK_SIZE	lib\inc\stm8s_flash.h	49;"	macro
 FLASH_BLOCK_SIZE	lib\inc\stm8s_flash.h	58;"	macro
@@ -617,12 +642,12 @@ FLASH_EraseByte	lib\inc\stm8s_flash.h	260;"	prototype	signature:(uint32_t Addres
 FLASH_EraseByte	lib\src\stm8s_flash.c	164;"	function	signature:(uint32_t Address)
 FLASH_EraseOptionByte	lib\inc\stm8s_flash.h	266;"	prototype	signature:(uint16_t Address)
 FLASH_EraseOptionByte	lib\src\stm8s_flash.c	270;"	function	signature:(uint16_t Address)
-FLASH_FLAG_DUL	lib\inc\stm8s_flash.h	144;"	enumerator	enum:__anon21
-FLASH_FLAG_EOP	lib\inc\stm8s_flash.h	145;"	enumerator	enum:__anon21
-FLASH_FLAG_HVOFF	lib\inc\stm8s_flash.h	142;"	enumerator	enum:__anon21
-FLASH_FLAG_PUL	lib\inc\stm8s_flash.h	146;"	enumerator	enum:__anon21
-FLASH_FLAG_WR_PG_DIS	lib\inc\stm8s_flash.h	147;"	enumerator	enum:__anon21
-FLASH_Flag_TypeDef	lib\inc\stm8s_flash.h	148;"	typedef	typeref:enum:__anon21
+FLASH_FLAG_DUL	lib\inc\stm8s_flash.h	144;"	enumerator	enum:__anon20
+FLASH_FLAG_EOP	lib\inc\stm8s_flash.h	145;"	enumerator	enum:__anon20
+FLASH_FLAG_HVOFF	lib\inc\stm8s_flash.h	142;"	enumerator	enum:__anon20
+FLASH_FLAG_PUL	lib\inc\stm8s_flash.h	146;"	enumerator	enum:__anon20
+FLASH_FLAG_WR_PG_DIS	lib\inc\stm8s_flash.h	147;"	enumerator	enum:__anon20
+FLASH_Flag_TypeDef	lib\inc\stm8s_flash.h	148;"	typedef	typeref:enum:__anon20
 FLASH_GetBootSize	lib\inc\stm8s_flash.h	271;"	prototype	signature:(void)
 FLASH_GetBootSize	lib\src\stm8s_flash.c	392;"	function	signature:(void)
 FLASH_GetFlagStatus	lib\inc\stm8s_flash.h	272;"	prototype	signature:(FLASH_Flag_TypeDef FLASH_FLAG)
@@ -639,16 +664,16 @@ FLASH_IAPSR_RESET_VALUE	lib\inc\stm8s.h	1532;"	macro
 FLASH_IAPSR_WR_PG_DIS	lib\inc\stm8s.h	1565;"	macro
 FLASH_ITConfig	lib\inc\stm8s_flash.h	259;"	prototype	signature:(FunctionalState NewState)
 FLASH_ITConfig	lib\src\stm8s_flash.c	142;"	function	signature:(FunctionalState NewState)
-FLASH_LPMODE_POWERDOWN	lib\inc\stm8s_flash.h	115;"	enumerator	enum:__anon19
-FLASH_LPMODE_POWERDOWN_STANDBY	lib\inc\stm8s_flash.h	117;"	enumerator	enum:__anon19
-FLASH_LPMODE_STANDBY	lib\inc\stm8s_flash.h	116;"	enumerator	enum:__anon19
-FLASH_LPMODE_STANDBY_POWERDOWN	lib\inc\stm8s_flash.h	118;"	enumerator	enum:__anon19
-FLASH_LPMode_TypeDef	lib\inc\stm8s_flash.h	120;"	typedef	typeref:enum:__anon19
+FLASH_LPMODE_POWERDOWN	lib\inc\stm8s_flash.h	115;"	enumerator	enum:__anon18
+FLASH_LPMODE_POWERDOWN_STANDBY	lib\inc\stm8s_flash.h	117;"	enumerator	enum:__anon18
+FLASH_LPMODE_STANDBY	lib\inc\stm8s_flash.h	116;"	enumerator	enum:__anon18
+FLASH_LPMODE_STANDBY_POWERDOWN	lib\inc\stm8s_flash.h	118;"	enumerator	enum:__anon18
+FLASH_LPMode_TypeDef	lib\inc\stm8s_flash.h	120;"	typedef	typeref:enum:__anon18
 FLASH_Lock	lib\inc\stm8s_flash.h	257;"	prototype	signature:(FLASH_MemType_TypeDef FLASH_MemType)
 FLASH_Lock	lib\src\stm8s_flash.c	112;"	function	signature:(FLASH_MemType_TypeDef FLASH_MemType)
-FLASH_MEMTYPE_DATA	lib\inc\stm8s_flash.h	92;"	enumerator	enum:__anon16
-FLASH_MEMTYPE_PROG	lib\inc\stm8s_flash.h	91;"	enumerator	enum:__anon16
-FLASH_MemType_TypeDef	lib\inc\stm8s_flash.h	93;"	typedef	typeref:enum:__anon16
+FLASH_MEMTYPE_DATA	lib\inc\stm8s_flash.h	92;"	enumerator	enum:__anon15
+FLASH_MEMTYPE_PROG	lib\inc\stm8s_flash.h	91;"	enumerator	enum:__anon15
+FLASH_MemType_TypeDef	lib\inc\stm8s_flash.h	93;"	typedef	typeref:enum:__anon15
 FLASH_NCR2_NERASE	lib\inc\stm8s.h	1557;"	macro
 FLASH_NCR2_NFPRG	lib\inc\stm8s.h	1558;"	macro
 FLASH_NCR2_NOPT	lib\inc\stm8s.h	1555;"	macro
@@ -656,10 +681,10 @@ FLASH_NCR2_NPRG	lib\inc\stm8s.h	1559;"	macro
 FLASH_NCR2_NWPRG	lib\inc\stm8s.h	1556;"	macro
 FLASH_NCR2_RESET_VALUE	lib\inc\stm8s.h	1531;"	macro
 FLASH_OPTIONBYTE_ERROR	lib\inc\stm8s_flash.h	75;"	macro
-FLASH_PROGRAMMODE_FAST	lib\inc\stm8s_flash.h	100;"	enumerator	enum:__anon17
-FLASH_PROGRAMMODE_STANDARD	lib\inc\stm8s_flash.h	99;"	enumerator	enum:__anon17
-FLASH_PROGRAMTIME_STANDARD	lib\inc\stm8s_flash.h	107;"	enumerator	enum:__anon18
-FLASH_PROGRAMTIME_TPROG	lib\inc\stm8s_flash.h	108;"	enumerator	enum:__anon18
+FLASH_PROGRAMMODE_FAST	lib\inc\stm8s_flash.h	100;"	enumerator	enum:__anon16
+FLASH_PROGRAMMODE_STANDARD	lib\inc\stm8s_flash.h	99;"	enumerator	enum:__anon16
+FLASH_PROGRAMTIME_STANDARD	lib\inc\stm8s_flash.h	107;"	enumerator	enum:__anon17
+FLASH_PROGRAMTIME_TPROG	lib\inc\stm8s_flash.h	108;"	enumerator	enum:__anon17
 FLASH_PROG_BLOCKS_NUMBER	lib\inc\stm8s_flash.h	45;"	macro
 FLASH_PROG_BLOCKS_NUMBER	lib\inc\stm8s_flash.h	54;"	macro
 FLASH_PROG_BLOCKS_NUMBER	lib\inc\stm8s_flash.h	63;"	macro
@@ -671,60 +696,63 @@ FLASH_PUKR_PUK	lib\inc\stm8s.h	1567;"	macro
 FLASH_PUKR_RESET_VALUE	lib\inc\stm8s.h	1533;"	macro
 FLASH_ProgramByte	lib\inc\stm8s_flash.h	261;"	prototype	signature:(uint32_t Address, uint8_t Data)
 FLASH_ProgramByte	lib\src\stm8s_flash.c	181;"	function	signature:(uint32_t Address, uint8_t Data)
-FLASH_ProgramMode_TypeDef	lib\inc\stm8s_flash.h	101;"	typedef	typeref:enum:__anon17
+FLASH_ProgramMode_TypeDef	lib\inc\stm8s_flash.h	101;"	typedef	typeref:enum:__anon16
 FLASH_ProgramOptionByte	lib\inc\stm8s_flash.h	265;"	prototype	signature:(uint16_t Address, uint8_t Data)
 FLASH_ProgramOptionByte	lib\src\stm8s_flash.c	237;"	function	signature:(uint16_t Address, uint8_t Data)
-FLASH_ProgramTime_TypeDef	lib\inc\stm8s_flash.h	109;"	typedef	typeref:enum:__anon18
+FLASH_ProgramTime_TypeDef	lib\inc\stm8s_flash.h	109;"	typedef	typeref:enum:__anon17
 FLASH_ProgramWord	lib\inc\stm8s_flash.h	263;"	prototype	signature:(uint32_t Address, uint32_t Data)
 FLASH_ProgramWord	lib\src\stm8s_flash.c	212;"	function	signature:(uint32_t Address, uint32_t Data)
+FLASH_RASS_KEY1	hardware.h	51;"	macro
 FLASH_RASS_KEY1	lib\inc\stm8s_flash.h	70;"	macro
+FLASH_RASS_KEY2	hardware.h	52;"	macro
 FLASH_RASS_KEY2	lib\inc\stm8s_flash.h	71;"	macro
 FLASH_ReadByte	lib\inc\stm8s_flash.h	262;"	prototype	signature:(uint32_t Address)
 FLASH_ReadByte	lib\src\stm8s_flash.c	195;"	function	signature:(uint32_t Address)
 FLASH_ReadOptionByte	lib\inc\stm8s_flash.h	264;"	prototype	signature:(uint16_t Address)
 FLASH_ReadOptionByte	lib\src\stm8s_flash.c	303;"	function	signature:(uint16_t Address)
 FLASH_SET_BYTE	lib\src\stm8s_flash.c	70;"	macro	file:
-FLASH_STATUS_END_HIGH_VOLTAGE	lib\inc\stm8s_flash.h	128;"	enumerator	enum:__anon20
-FLASH_STATUS_SUCCESSFUL_OPERATION	lib\inc\stm8s_flash.h	130;"	enumerator	enum:__anon20
-FLASH_STATUS_TIMEOUT	lib\inc\stm8s_flash.h	131;"	enumerator	enum:__anon20
-FLASH_STATUS_WRITE_PROTECTION_ERROR	lib\inc\stm8s_flash.h	132;"	enumerator	enum:__anon20
+FLASH_STATUS_END_HIGH_VOLTAGE	lib\inc\stm8s_flash.h	128;"	enumerator	enum:__anon19
+FLASH_STATUS_SUCCESSFUL_OPERATION	lib\inc\stm8s_flash.h	130;"	enumerator	enum:__anon19
+FLASH_STATUS_TIMEOUT	lib\inc\stm8s_flash.h	131;"	enumerator	enum:__anon19
+FLASH_STATUS_WRITE_PROTECTION_ERROR	lib\inc\stm8s_flash.h	132;"	enumerator	enum:__anon19
 FLASH_SetLowPowerMode	lib\inc\stm8s_flash.h	267;"	prototype	signature:(FLASH_LPMode_TypeDef FLASH_LPMode)
 FLASH_SetLowPowerMode	lib\src\stm8s_flash.c	340;"	function	signature:(FLASH_LPMode_TypeDef FLASH_LPMode)
 FLASH_SetProgrammingTime	lib\inc\stm8s_flash.h	268;"	prototype	signature:(FLASH_ProgramTime_TypeDef FLASH_ProgTime)
 FLASH_SetProgrammingTime	lib\src\stm8s_flash.c	358;"	function	signature:(FLASH_ProgramTime_TypeDef FLASH_ProgTime)
-FLASH_Status_TypeDef	lib\inc\stm8s_flash.h	133;"	typedef	typeref:enum:__anon20
+FLASH_Status_TypeDef	lib\inc\stm8s_flash.h	133;"	typedef	typeref:enum:__anon19
 FLASH_TypeDef	lib\inc\stm8s.h	1523;"	typedef	typeref:struct:FLASH_struct
 FLASH_Unlock	lib\inc\stm8s_flash.h	256;"	prototype	signature:(FLASH_MemType_TypeDef FLASH_MemType)
 FLASH_Unlock	lib\src\stm8s_flash.c	87;"	function	signature:(FLASH_MemType_TypeDef FLASH_MemType)
+FLASH_Wait	hardware.c	123;"	function	signature:(void)
 FLASH_WaitForLastOperation	lib\inc\stm8s_flash.h	291;"	prototype	signature:(FLASH_MemType_TypeDef FLASH_MemType)
 FLASH_WaitForLastOperation	lib\src\stm8s_flash.c	549;"	function	signature:(FLASH_MemType_TypeDef FLASH_MemType)
 FLASH_struct	lib\inc\stm8s.h	1509;"	struct
-FMR1	lib\inc\stm8s.h	2295;"	member	struct:__anon7::__anon8::__anon14
-FMR2	lib\inc\stm8s.h	2296;"	member	struct:__anon7::__anon8::__anon14
+FMR1	lib\inc\stm8s.h	2295;"	member	struct:__anon6::__anon7::__anon13
+FMR2	lib\inc\stm8s.h	2296;"	member	struct:__anon6::__anon7::__anon13
 FPR	lib\inc\stm8s.h	1514;"	member	struct:FLASH_struct
-FR01	lib\inc\stm8s.h	2204;"	member	struct:__anon7::__anon8::__anon10
-FR02	lib\inc\stm8s.h	2205;"	member	struct:__anon7::__anon8::__anon10
-FR03	lib\inc\stm8s.h	2206;"	member	struct:__anon7::__anon8::__anon10
-FR04	lib\inc\stm8s.h	2207;"	member	struct:__anon7::__anon8::__anon10
-FR05	lib\inc\stm8s.h	2208;"	member	struct:__anon7::__anon8::__anon10
-FR06	lib\inc\stm8s.h	2209;"	member	struct:__anon7::__anon8::__anon10
-FR07	lib\inc\stm8s.h	2210;"	member	struct:__anon7::__anon8::__anon10
-FR08	lib\inc\stm8s.h	2211;"	member	struct:__anon7::__anon8::__anon10
-FR09	lib\inc\stm8s.h	2213;"	member	struct:__anon7::__anon8::__anon10
-FR10	lib\inc\stm8s.h	2214;"	member	struct:__anon7::__anon8::__anon10
-FR11	lib\inc\stm8s.h	2215;"	member	struct:__anon7::__anon8::__anon10
-FR12	lib\inc\stm8s.h	2216;"	member	struct:__anon7::__anon8::__anon10
-FR13	lib\inc\stm8s.h	2217;"	member	struct:__anon7::__anon8::__anon10
-FR14	lib\inc\stm8s.h	2218;"	member	struct:__anon7::__anon8::__anon10
-FR15	lib\inc\stm8s.h	2219;"	member	struct:__anon7::__anon8::__anon10
-FR16	lib\inc\stm8s.h	2220;"	member	struct:__anon7::__anon8::__anon10
+FR01	lib\inc\stm8s.h	2204;"	member	struct:__anon6::__anon7::__anon9
+FR02	lib\inc\stm8s.h	2205;"	member	struct:__anon6::__anon7::__anon9
+FR03	lib\inc\stm8s.h	2206;"	member	struct:__anon6::__anon7::__anon9
+FR04	lib\inc\stm8s.h	2207;"	member	struct:__anon6::__anon7::__anon9
+FR05	lib\inc\stm8s.h	2208;"	member	struct:__anon6::__anon7::__anon9
+FR06	lib\inc\stm8s.h	2209;"	member	struct:__anon6::__anon7::__anon9
+FR07	lib\inc\stm8s.h	2210;"	member	struct:__anon6::__anon7::__anon9
+FR08	lib\inc\stm8s.h	2211;"	member	struct:__anon6::__anon7::__anon9
+FR09	lib\inc\stm8s.h	2213;"	member	struct:__anon6::__anon7::__anon9
+FR10	lib\inc\stm8s.h	2214;"	member	struct:__anon6::__anon7::__anon9
+FR11	lib\inc\stm8s.h	2215;"	member	struct:__anon6::__anon7::__anon9
+FR12	lib\inc\stm8s.h	2216;"	member	struct:__anon6::__anon7::__anon9
+FR13	lib\inc\stm8s.h	2217;"	member	struct:__anon6::__anon7::__anon9
+FR14	lib\inc\stm8s.h	2218;"	member	struct:__anon6::__anon7::__anon9
+FR15	lib\inc\stm8s.h	2219;"	member	struct:__anon6::__anon7::__anon9
+FR16	lib\inc\stm8s.h	2220;"	member	struct:__anon6::__anon7::__anon9
 FREQR	lib\inc\stm8s.h	1327;"	member	struct:I2C_struct
-Filter	lib\inc\stm8s.h	2221;"	member	union:__anon7::__anon8	typeref:struct:__anon7::__anon8::__anon10
-Filter01	lib\inc\stm8s.h	2242;"	member	union:__anon7::__anon8	typeref:struct:__anon7::__anon8::__anon11
-Filter23	lib\inc\stm8s.h	2263;"	member	union:__anon7::__anon8	typeref:struct:__anon7::__anon8::__anon12
-Filter45	lib\inc\stm8s.h	2284;"	member	union:__anon7::__anon8	typeref:struct:__anon7::__anon8::__anon13
-FlagStatus	lib\inc\stm8s.h	232;"	typedef	typeref:enum:__anon4
-FunctionalState	lib\inc\stm8s.h	234;"	typedef	typeref:enum:__anon5
+Filter	lib\inc\stm8s.h	2221;"	member	union:__anon6::__anon7	typeref:struct:__anon6::__anon7::__anon9
+Filter01	lib\inc\stm8s.h	2242;"	member	union:__anon6::__anon7	typeref:struct:__anon6::__anon7::__anon10
+Filter23	lib\inc\stm8s.h	2263;"	member	union:__anon6::__anon7	typeref:struct:__anon6::__anon7::__anon11
+Filter45	lib\inc\stm8s.h	2284;"	member	union:__anon6::__anon7	typeref:struct:__anon6::__anon7::__anon12
+FlagStatus	lib\inc\stm8s.h	232;"	typedef	typeref:enum:__anon3
+FunctionalState	lib\inc\stm8s.h	234;"	typedef	typeref:enum:__anon4
 GCR	lib\inc\stm8s.h	2519;"	member	struct:CFG_struct
 GPIO	hardware.h	43;"	macro
 GPIOA	lib\inc\stm8s.h	2626;"	macro
@@ -755,7 +783,7 @@ GTR	lib\inc\stm8s.h	1773;"	member	struct:UART1_struct
 GTR	lib\inc\stm8s.h	1872;"	member	struct:UART2_struct
 GTR	lib\inc\stm8s.h	2071;"	member	struct:UART4_struct
 HARDWARE_H_	hardware.h	32;"	macro
-HIBYTE	usb\usb_desc.h	43;"	macro
+HIBYTE	usb_desc.h	46;"	macro
 HID_DESCRIPTOR	usb\usb.h	85;"	macro
 HID_DESCRIPTOR_PHYSICAL	usb\usb.h	87;"	macro
 HID_DESCRIPTOR_REPORT	usb\usb.h	86;"	macro
@@ -768,9 +796,11 @@ HID_REQ_GET_REPORT	usb\usb.h	82;"	macro
 HID_REQ_SET_IDLE	usb\usb.h	79;"	macro
 HID_REQ_SET_PROTOCOL	usb\usb.h	77;"	macro
 HID_REQ_SET_REPORT	usb\usb.h	81;"	macro
-HID_ReportDescriptor	usb\usb_desc.c	69;"	variable
-HI_byte	main.h	61;"	member	struct:__anon28::__anon29::__anon30
-HI_byte	main.h	68;"	member	struct:__anon28::__anon31::__anon32
+HID_ReportDescriptor	usb_desc.c	118;"	variable
+HID_Task	hardware.c	369;"	function	signature:(void)
+HID_Task	hardware.h	153;"	prototype	signature:(void)
+HI_byte	main.h	61;"	member	struct:__anon27::__anon28::__anon29
+HI_byte	main.h	68;"	member	struct:__anon27::__anon30::__anon31
 HSE_VALUE	lib\inc\stm8s.h	108;"	macro
 HSE_VALUE	lib\inc\stm8s.h	110;"	macro
 HSITRIMR	lib\inc\stm8s.h	517;"	member	struct:CLK_struct
@@ -843,10 +873,11 @@ IAPSR	lib\inc\stm8s.h	1516;"	member	struct:FLASH_struct
 ICKR	lib\inc\stm8s.h	505;"	member	struct:CLK_struct
 ICR	lib\inc\stm8s.h	1695;"	member	struct:SPI_struct
 IDR	lib\inc\stm8s.h	267;"	member	struct:GPIO_struct
+ID_CONSUMER	hardware.h	127;"	enumerator	enum:REPORT_ID
 IER	lib\inc\stm8s.h	1060;"	member	struct:TIM4_struct
 IER	lib\inc\stm8s.h	1121;"	member	struct:TIM5_struct
 IER	lib\inc\stm8s.h	1260;"	member	struct:TIM6_struct
-IER	lib\inc\stm8s.h	2176;"	member	struct:__anon7
+IER	lib\inc\stm8s.h	2176;"	member	struct:__anon6
 IER	lib\inc\stm8s.h	613;"	member	struct:TIM1_struct
 IER	lib\inc\stm8s.h	826;"	member	struct:TIM2_struct
 IER	lib\inc\stm8s.h	950;"	member	struct:TIM3_struct
@@ -870,7 +901,6 @@ IRQ10	stm8_interrupt_vector.h	69;"	macro
 IRQ11	stm8_interrupt_vector.h	73;"	macro
 IRQ12	irq.h	27;"	macro
 IRQ12	stm8_interrupt_vector.h	77;"	macro
-IRQ13	irq.h	30;"	macro
 IRQ13	stm8_interrupt_vector.h	81;"	macro
 IRQ14	stm8_interrupt_vector.h	85;"	macro
 IRQ15	stm8_interrupt_vector.h	89;"	macro
@@ -890,8 +920,11 @@ IRQ27	stm8_interrupt_vector.h	137;"	macro
 IRQ28	stm8_interrupt_vector.h	141;"	macro
 IRQ29	stm8_interrupt_vector.h	145;"	macro
 IRQ3	stm8_interrupt_vector.h	41;"	macro
+IRQ4	irq.h	33;"	macro
 IRQ4	stm8_interrupt_vector.h	45;"	macro
+IRQ5	irq.h	36;"	macro
 IRQ5	stm8_interrupt_vector.h	49;"	macro
+IRQ6	irq.h	39;"	macro
 IRQ6	stm8_interrupt_vector.h	53;"	macro
 IRQ7	stm8_interrupt_vector.h	57;"	macro
 IRQ8	stm8_interrupt_vector.h	61;"	macro
@@ -926,100 +959,95 @@ ITC_SPRX_RESET_VALUE	lib\inc\stm8s.h	1447;"	macro
 ITC_TypeDef	lib\inc\stm8s.h	1441;"	typedef	typeref:struct:ITC_struct
 ITC_struct	lib\inc\stm8s.h	1430;"	struct
 ITR	lib\inc\stm8s.h	1335;"	member	struct:I2C_struct
-ITStatus	lib\inc\stm8s.h	232;"	typedef	typeref:enum:__anon4
+ITStatus	lib\inc\stm8s.h	232;"	typedef	typeref:enum:__anon3
 IWDG	lib\inc\stm8s.h	2652;"	macro
 IWDG_BaseAddress	lib\inc\stm8s.h	2570;"	macro
-IWDG_KEY_ENABLE	hardware.c	43;"	macro	file:
+IWDG_KEY_ENABLE	hardware.c	47;"	macro	file:
 IWDG_PR_RESET_VALUE	lib\inc\stm8s.h	1616;"	macro
 IWDG_RLR_RESET_VALUE	lib\inc\stm8s.h	1617;"	macro
 IWDG_TypeDef	lib\inc\stm8s.h	1610;"	typedef	typeref:struct:IWDG_struct
 IWDG_struct	lib\inc\stm8s.h	1604;"	struct
 IdleState	main.h	78;"	member	struct:s_HID_Dev
-Init_Hardware	hardware.c	30;"	function	signature:(void)
-Init_Hardware	hardware.h	85;"	prototype	signature:(void)
-KEY_CNT_MAX	hardware.h	114;"	macro
-KEY_DEC	hardware.h	117;"	enumerator	enum:keys
-KEY_DOFFSET	hardware.h	81;"	macro
-KEY_FLAG	hardware.h	118;"	enumerator	enum:keys
-KEY_INC	hardware.h	117;"	enumerator	enum:keys
-KEY_LONG	hardware.h	118;"	enumerator	enum:keys
-KEY_MASK	hardware.h	117;"	enumerator	enum:keys
-KEY_MENU	hardware.h	117;"	enumerator	enum:keys
-KEY_RELOAD	hardware.h	115;"	macro
-KEY_REPEAT_RATE	hardware.h	110;"	macro
-KEY_REPEAT_WAIT	hardware.h	112;"	macro
-KEY_REPORTED	hardware.h	118;"	enumerator	enum:keys
+Init_Hardware	hardware.c	33;"	function	signature:(void)
+Init_Hardware	hardware.h	144;"	prototype	signature:(void)
 KEY_SETTINGS_START_ADDR	main.h	6;"	macro
-KEY_THRESHOLD	hardware.h	111;"	macro
 KR	lib\inc\stm8s.h	1606;"	member	struct:IWDG_struct
-KeyCode	main.h	25;"	member	struct:__anon23
-KeyCode	main.h	38;"	member	struct:__anon25
-KeyCode	main.h	45;"	member	struct:__anon26
-KeyCode	main.h	52;"	member	struct:__anon27
-KeyCode_HI	main.h	17;"	member	struct:__anon22
-KeyCode_HI	main.h	32;"	member	struct:__anon24
-KeyCode_LO	main.h	16;"	member	struct:__anon22
-KeyCode_LO	main.h	31;"	member	struct:__anon24
-KeyScan	hardware.h	108;"	prototype	signature:(void)
-Key_Get	hardware.h	92;"	prototype	signature:(void)
+KeyCode	main.h	25;"	member	struct:__anon22
+KeyCode	main.h	38;"	member	struct:__anon24
+KeyCode	main.h	45;"	member	struct:__anon25
+KeyCode	main.h	52;"	member	struct:__anon26
+KeyCode_HI	main.h	17;"	member	struct:__anon21
+KeyCode_HI	main.h	32;"	member	struct:__anon23
+KeyCode_LO	main.h	16;"	member	struct:__anon21
+KeyCode_LO	main.h	31;"	member	struct:__anon23
 Key_settings	main.h	86;"	member	struct:s_HID_Dev
 Key_settings_to_write	main.h	87;"	member	struct:s_HID_Dev
-LCD_BIAS_PIN	hardware.h	49;"	macro
-LCD_BIAS_PORT	hardware.h	48;"	macro
-LCD_DATA	hardware.h	79;"	macro
-LCD_DATA_PORT	hardware.h	78;"	macro
-LCD_DOFFSET	hardware.h	80;"	macro
-LCD_Init	hardware.h	90;"	prototype	signature:(void)
-LENGTH_STRING_DESCRIPTOR	usb\usb_desc.h	21;"	macro
-LOBYTE	usb\usb_desc.h	42;"	macro
-LO_byte	main.h	62;"	member	struct:__anon28::__anon29::__anon30
-LO_byte	main.h	69;"	member	struct:__anon28::__anon31::__anon32
+LED	hardware.c	191;"	function	signature:(uint8_t Colour)
+LED	hardware.h	149;"	prototype	signature:(uint8_t Colour)
+LED_AQUA	hardware.h	72;"	enumerator	enum:_LED
+LED_B	hardware.h	65;"	macro
+LED_BLUE	hardware.h	69;"	enumerator	enum:_LED
+LED_B_PORT	hardware.h	64;"	macro
+LED_G	hardware.h	63;"	macro
+LED_GREEN	hardware.h	69;"	enumerator	enum:_LED
+LED_G_PORT	hardware.h	62;"	macro
+LED_MAGENTA	hardware.h	71;"	enumerator	enum:_LED
+LED_OFF	hardware.h	69;"	enumerator	enum:_LED
+LED_R	hardware.h	61;"	macro
+LED_RED	hardware.h	69;"	enumerator	enum:_LED
+LED_R_PORT	hardware.h	60;"	macro
+LED_WHITE	hardware.h	73;"	enumerator	enum:_LED
+LED_YELLOW	hardware.h	70;"	enumerator	enum:_LED
+LENGTH_STRING_DESCRIPTOR	usb_desc.h	21;"	macro
+LOBYTE	usb_desc.h	45;"	macro
+LO_byte	main.h	62;"	member	struct:__anon27::__anon28::__anon29
+LO_byte	main.h	69;"	member	struct:__anon27::__anon30::__anon31
 LSI_VALUE	lib\inc\stm8s.h	118;"	macro
 LTRH	lib\inc\stm8s.h	326;"	member	struct:ADC1_struct
 LTRL	lib\inc\stm8s.h	327;"	member	struct:ADC1_struct
-MAGIC_VAL	usb-config.h	19;"	macro
+MAGIC_VAL	usb-config.h	20;"	macro
 MAIN_H_	main.h	2;"	macro
-MCR	lib\inc\stm8s.h	2171;"	member	struct:__anon7
-MCSR	lib\inc\stm8s.h	2184;"	member	struct:__anon7::__anon8::__anon9
-MDAR1	lib\inc\stm8s.h	2190;"	member	struct:__anon7::__anon8::__anon9
-MDAR1	lib\inc\stm8s.h	2311;"	member	struct:__anon7::__anon8::__anon15
-MDAR2	lib\inc\stm8s.h	2191;"	member	struct:__anon7::__anon8::__anon9
-MDAR2	lib\inc\stm8s.h	2312;"	member	struct:__anon7::__anon8::__anon15
-MDAR3	lib\inc\stm8s.h	2192;"	member	struct:__anon7::__anon8::__anon9
-MDAR3	lib\inc\stm8s.h	2313;"	member	struct:__anon7::__anon8::__anon15
-MDAR4	lib\inc\stm8s.h	2193;"	member	struct:__anon7::__anon8::__anon9
-MDAR4	lib\inc\stm8s.h	2314;"	member	struct:__anon7::__anon8::__anon15
-MDAR5	lib\inc\stm8s.h	2194;"	member	struct:__anon7::__anon8::__anon9
-MDAR5	lib\inc\stm8s.h	2315;"	member	struct:__anon7::__anon8::__anon15
-MDAR6	lib\inc\stm8s.h	2195;"	member	struct:__anon7::__anon8::__anon9
-MDAR6	lib\inc\stm8s.h	2316;"	member	struct:__anon7::__anon8::__anon15
-MDAR7	lib\inc\stm8s.h	2196;"	member	struct:__anon7::__anon8::__anon9
-MDAR7	lib\inc\stm8s.h	2317;"	member	struct:__anon7::__anon8::__anon15
-MDAR8	lib\inc\stm8s.h	2197;"	member	struct:__anon7::__anon8::__anon9
-MDAR8	lib\inc\stm8s.h	2318;"	member	struct:__anon7::__anon8::__anon15
-MDLCR	lib\inc\stm8s.h	2185;"	member	struct:__anon7::__anon8::__anon9
-MDLCR	lib\inc\stm8s.h	2306;"	member	struct:__anon7::__anon8::__anon15
+MCR	lib\inc\stm8s.h	2171;"	member	struct:__anon6
+MCSR	lib\inc\stm8s.h	2184;"	member	struct:__anon6::__anon7::__anon8
+MDAR1	lib\inc\stm8s.h	2190;"	member	struct:__anon6::__anon7::__anon8
+MDAR1	lib\inc\stm8s.h	2311;"	member	struct:__anon6::__anon7::__anon14
+MDAR2	lib\inc\stm8s.h	2191;"	member	struct:__anon6::__anon7::__anon8
+MDAR2	lib\inc\stm8s.h	2312;"	member	struct:__anon6::__anon7::__anon14
+MDAR3	lib\inc\stm8s.h	2192;"	member	struct:__anon6::__anon7::__anon8
+MDAR3	lib\inc\stm8s.h	2313;"	member	struct:__anon6::__anon7::__anon14
+MDAR4	lib\inc\stm8s.h	2193;"	member	struct:__anon6::__anon7::__anon8
+MDAR4	lib\inc\stm8s.h	2314;"	member	struct:__anon6::__anon7::__anon14
+MDAR5	lib\inc\stm8s.h	2194;"	member	struct:__anon6::__anon7::__anon8
+MDAR5	lib\inc\stm8s.h	2315;"	member	struct:__anon6::__anon7::__anon14
+MDAR6	lib\inc\stm8s.h	2195;"	member	struct:__anon6::__anon7::__anon8
+MDAR6	lib\inc\stm8s.h	2316;"	member	struct:__anon6::__anon7::__anon14
+MDAR7	lib\inc\stm8s.h	2196;"	member	struct:__anon6::__anon7::__anon8
+MDAR7	lib\inc\stm8s.h	2317;"	member	struct:__anon6::__anon7::__anon14
+MDAR8	lib\inc\stm8s.h	2197;"	member	struct:__anon6::__anon7::__anon8
+MDAR8	lib\inc\stm8s.h	2318;"	member	struct:__anon6::__anon7::__anon14
+MDLCR	lib\inc\stm8s.h	2185;"	member	struct:__anon6::__anon7::__anon8
+MDLCR	lib\inc\stm8s.h	2306;"	member	struct:__anon6::__anon7::__anon14
 MEMCPY	lib\inc\stm8s.h	135;"	macro
 MEMCPY	lib\inc\stm8s.h	138;"	macro
-MFMI	lib\inc\stm8s.h	2305;"	member	struct:__anon7::__anon8::__anon15
-MIDR1	lib\inc\stm8s.h	2186;"	member	struct:__anon7::__anon8::__anon9
-MIDR1	lib\inc\stm8s.h	2307;"	member	struct:__anon7::__anon8::__anon15
-MIDR2	lib\inc\stm8s.h	2187;"	member	struct:__anon7::__anon8::__anon9
-MIDR2	lib\inc\stm8s.h	2308;"	member	struct:__anon7::__anon8::__anon15
-MIDR3	lib\inc\stm8s.h	2188;"	member	struct:__anon7::__anon8::__anon9
-MIDR3	lib\inc\stm8s.h	2309;"	member	struct:__anon7::__anon8::__anon15
-MIDR4	lib\inc\stm8s.h	2189;"	member	struct:__anon7::__anon8::__anon9
-MIDR4	lib\inc\stm8s.h	2310;"	member	struct:__anon7::__anon8::__anon15
+MFMI	lib\inc\stm8s.h	2305;"	member	struct:__anon6::__anon7::__anon14
+MIDR1	lib\inc\stm8s.h	2186;"	member	struct:__anon6::__anon7::__anon8
+MIDR1	lib\inc\stm8s.h	2307;"	member	struct:__anon6::__anon7::__anon14
+MIDR2	lib\inc\stm8s.h	2187;"	member	struct:__anon6::__anon7::__anon8
+MIDR2	lib\inc\stm8s.h	2308;"	member	struct:__anon6::__anon7::__anon14
+MIDR3	lib\inc\stm8s.h	2188;"	member	struct:__anon6::__anon7::__anon8
+MIDR3	lib\inc\stm8s.h	2309;"	member	struct:__anon6::__anon7::__anon14
+MIDR4	lib\inc\stm8s.h	2189;"	member	struct:__anon6::__anon7::__anon8
+MIDR4	lib\inc\stm8s.h	2310;"	member	struct:__anon6::__anon7::__anon14
 MIN	usb\usb.h	19;"	macro
-MSR	lib\inc\stm8s.h	2172;"	member	struct:__anon7
-MTSRH	lib\inc\stm8s.h	2199;"	member	struct:__anon7::__anon8::__anon9
-MTSRH	lib\inc\stm8s.h	2320;"	member	struct:__anon7::__anon8::__anon15
-MTSRL	lib\inc\stm8s.h	2198;"	member	struct:__anon7::__anon8::__anon9
-MTSRL	lib\inc\stm8s.h	2319;"	member	struct:__anon7::__anon8::__anon15
+MSR	lib\inc\stm8s.h	2172;"	member	struct:__anon6
+MTSRH	lib\inc\stm8s.h	2199;"	member	struct:__anon6::__anon7::__anon8
+MTSRH	lib\inc\stm8s.h	2320;"	member	struct:__anon6::__anon7::__anon14
+MTSRL	lib\inc\stm8s.h	2198;"	member	struct:__anon6::__anon7::__anon8
+MTSRL	lib\inc\stm8s.h	2319;"	member	struct:__anon6::__anon7::__anon14
 MemoryAddressCast	lib\inc\stm8s.h	156;"	macro
 MemoryAddressCast	lib\inc\stm8s.h	160;"	macro
-Modifier	main.h	23;"	member	struct:__anon23
-Modifiers	main.h	15;"	member	struct:__anon22
+Modifier	main.h	23;"	member	struct:__anon22
+Modifiers	main.h	15;"	member	struct:__anon21
 MskBit	lib\inc\stm8s.h	2795;"	macro
 NCR2	lib\inc\stm8s.h	1513;"	member	struct:FLASH_struct
 NEAR	lib\inc\stm8s.h	122;"	macro
@@ -1047,7 +1075,7 @@ OPT3	lib\inc\stm8s.h	1586;"	member	struct:OPT_struct
 OPT4	lib\inc\stm8s.h	1588;"	member	struct:OPT_struct
 OPT5	lib\inc\stm8s.h	1590;"	member	struct:OPT_struct
 OPT7	lib\inc\stm8s.h	1594;"	member	struct:OPT_struct
-OPTION_BYTE	hardware.h	52;"	macro
+OPTION_BYTE	hardware.h	49;"	macro
 OPTION_BYTE_END_PHYSICAL_ADDRESS	lib\inc\stm8s_flash.h	74;"	macro
 OPTION_BYTE_START_PHYSICAL_ADDRESS	lib\inc\stm8s_flash.h	73;"	macro
 OPT_BaseAddress	lib\inc\stm8s.h	2555;"	macro
@@ -1082,14 +1110,21 @@ PSCR	lib\inc\stm8s.h	837;"	member	struct:TIM2_struct
 PSCR	lib\inc\stm8s.h	959;"	member	struct:TIM3_struct
 PSCRH	lib\inc\stm8s.h	625;"	member	struct:TIM1_struct
 PSCRL	lib\inc\stm8s.h	626;"	member	struct:TIM1_struct
-PSR	lib\inc\stm8s.h	2178;"	member	struct:__anon7
+PSR	lib\inc\stm8s.h	2178;"	member	struct:__anon6
 PUKR	lib\inc\stm8s.h	1519;"	member	struct:FLASH_struct
-Page	lib\inc\stm8s.h	2322;"	member	struct:__anon7	typeref:union:__anon7::__anon8
+Page	lib\inc\stm8s.h	2322;"	member	struct:__anon6	typeref:union:__anon6::__anon7
 PointerAttr	lib\inc\stm8s.h	155;"	macro
 PointerAttr	lib\inc\stm8s.h	159;"	macro
 Protocol	main.h	77;"	member	struct:s_HID_Dev
 RCR	lib\inc\stm8s.h	629;"	member	struct:TIM1_struct
-RECR	lib\inc\stm8s.h	2291;"	member	struct:__anon7::__anon8::__anon14
+RECR	lib\inc\stm8s.h	2291;"	member	struct:__anon6::__anon7::__anon13
+REPORT_BITMAP	hardware.h	138;"	enum
+REPORT_CMD	hardware.h	135;"	enumerator	enum:REPORT_STATE
+REPORT_CMD_RELEASE	hardware.h	135;"	enumerator	enum:REPORT_STATE
+REPORT_ID	hardware.h	125;"	enum
+REPORT_RDY	hardware.h	135;"	enumerator	enum:REPORT_STATE
+REPORT_SIZE	hardware.h	123;"	macro
+REPORT_STATE	hardware.h	133;"	enum
 RESERVED	lib\inc\stm8s.h	1977;"	member	struct:UART3_struct
 RESERVED	lib\inc\stm8s.h	315;"	member	struct:ADC1_struct
 RESERVED	lib\inc\stm8s.h	390;"	member	struct:ADC2_struct
@@ -1106,10 +1141,10 @@ RESERVED2	lib\inc\stm8s.h	1518;"	member	struct:FLASH_struct
 RESERVED2	lib\inc\stm8s.h	1593;"	member	struct:OPT_struct
 RESERVED2	lib\inc\stm8s.h	824;"	member	struct:TIM2_struct
 RESERVED3	lib\inc\stm8s.h	1520;"	member	struct:FLASH_struct
-RESET	lib\inc\stm8s.h	232;"	enumerator	enum:__anon4
-RESET_CHIP	hardware.c	45;"	function	signature:(void)
-RESET_CHIP	hardware.h	86;"	prototype	signature:(void)
-RFR	lib\inc\stm8s.h	2175;"	member	struct:__anon7
+RESET	lib\inc\stm8s.h	232;"	enumerator	enum:__anon3
+RESET_CHIP	hardware.c	49;"	function	signature:(void)
+RESET_CHIP	hardware.h	145;"	prototype	signature:(void)
+RFR	lib\inc\stm8s.h	2175;"	member	struct:__anon6
 RLR	lib\inc\stm8s.h	1608;"	member	struct:IWDG_struct
 RST	lib\inc\stm8s.h	2649;"	macro
 RST_BaseAddress	lib\inc\stm8s.h	2567;"	macro
@@ -1121,31 +1156,33 @@ RST_SR_WWDGF	lib\inc\stm8s.h	1680;"	macro
 RST_TypeDef	lib\inc\stm8s.h	1670;"	typedef	typeref:struct:RST_struct
 RST_struct	lib\inc\stm8s.h	1666;"	struct
 RXCRCR	lib\inc\stm8s.h	1699;"	member	struct:SPI_struct
-ReportID	main.h	22;"	member	struct:__anon23
-ReportID	main.h	30;"	member	struct:__anon24
-ReportID	main.h	37;"	member	struct:__anon25
-ReportID	main.h	43;"	member	struct:__anon26
-ReportID	main.h	57;"	member	struct:__anon28
-Reserved	main.h	24;"	member	struct:__anon23
-Reserved1	lib\inc\stm8s.h	2294;"	member	struct:__anon7::__anon8::__anon14
-Reserved2	lib\inc\stm8s.h	2300;"	member	struct:__anon7::__anon8::__anon14
-RxFIFO	lib\inc\stm8s.h	2321;"	member	union:__anon7::__anon8	typeref:struct:__anon7::__anon8::__anon15
+ReportID	main.h	22;"	member	struct:__anon22
+ReportID	main.h	30;"	member	struct:__anon23
+ReportID	main.h	37;"	member	struct:__anon24
+ReportID	main.h	43;"	member	struct:__anon25
+ReportID	main.h	57;"	member	struct:__anon27
+ReportIn	hardware.c	27;"	variable
+Report_State	hardware.c	27;"	variable
+Reserved	main.h	24;"	member	struct:__anon22
+Reserved1	lib\inc\stm8s.h	2294;"	member	struct:__anon6::__anon7::__anon13
+Reserved2	lib\inc\stm8s.h	2300;"	member	struct:__anon6::__anon7::__anon13
+RxFIFO	lib\inc\stm8s.h	2321;"	member	union:__anon6::__anon7	typeref:struct:__anon6::__anon7::__anon14
 S16_MAX	lib\inc\stm8s.h	243;"	macro
 S16_MIN	lib\inc\stm8s.h	244;"	macro
 S32_MAX	lib\inc\stm8s.h	246;"	macro
 S32_MIN	lib\inc\stm8s.h	247;"	macro
 S8_MAX	lib\inc\stm8s.h	240;"	macro
 S8_MIN	lib\inc\stm8s.h	241;"	macro
-SET	lib\inc\stm8s.h	232;"	enumerator	enum:__anon4
-SIZE_CONFIGURATION_DESCRIPTOR	usb\usb_desc.h	10;"	macro
-SIZE_CONFIGURATION_DESCRIPTOR	usb\usb_desc.h	18;"	macro
-SIZE_DEVICE_DESCRIPTOR	usb\usb_desc.h	6;"	macro
-SIZE_HID_DESCRIPTOR	usb\usb_desc.h	15;"	macro
-SIZE_REPORT_DESCRIPTOR	usb\usb_desc.h	28;"	macro
-SIZE_STRING_LANGID	usb\usb_desc.h	22;"	macro
-SIZE_STRING_PRODUCT	usb\usb_desc.h	24;"	macro
-SIZE_STRING_SERIAL	usb\usb_desc.h	25;"	macro
-SIZE_STRING_VENDOR	usb\usb_desc.h	23;"	macro
+SET	lib\inc\stm8s.h	232;"	enumerator	enum:__anon3
+SIZE_CONFIGURATION_DESCRIPTOR	usb_desc.h	10;"	macro
+SIZE_CONFIGURATION_DESCRIPTOR	usb_desc.h	18;"	macro
+SIZE_DEVICE_DESCRIPTOR	usb_desc.h	6;"	macro
+SIZE_HID_DESCRIPTOR	usb_desc.h	15;"	macro
+SIZE_REPORT_DESCRIPTOR	usb_desc.h	28;"	macro
+SIZE_STRING_LANGID	usb_desc.h	22;"	macro
+SIZE_STRING_PRODUCT	usb_desc.h	24;"	macro
+SIZE_STRING_SERIAL	usb_desc.h	25;"	macro
+SIZE_STRING_VENDOR	usb_desc.h	23;"	macro
 SMCR	lib\inc\stm8s.h	1120;"	member	struct:TIM5_struct
 SMCR	lib\inc\stm8s.h	1259;"	member	struct:TIM6_struct
 SMCR	lib\inc\stm8s.h	611;"	member	struct:TIM1_struct
@@ -1209,28 +1246,40 @@ STD_KB_Report_changed_flag	main.h	81;"	member	struct:s_HID_Dev
 STD_KEYBOARD_USAGE_PAGE	main.h	7;"	macro
 STM8S003	hardware.h	28;"	macro
 STRINGVECTOR	lib\inc\stm8s.h	2757;"	macro
-SUCCESS	lib\inc\stm8s.h	237;"	enumerator	enum:__anon6
+SUCCESS	lib\inc\stm8s.h	237;"	enumerator	enum:__anon5
 SWCR	lib\inc\stm8s.h	510;"	member	struct:CLK_struct
 SWIMCCR	lib\inc\stm8s.h	518;"	member	struct:CLK_struct
 SWR	lib\inc\stm8s.h	509;"	member	struct:CLK_struct
+SW_AT_BREAK	hardware.h	100;"	macro
+SW_AT_MAKE	hardware.h	99;"	macro
+SW_BREAK	hardware.h	102;"	macro
+SW_BREAK_WAIT	hardware.h	112;"	enumerator	enum:SW_STATE
+SW_DBL_BREAK	hardware.h	112;"	enumerator	enum:SW_STATE
+SW_DBL_CLICK	hardware.h	112;"	enumerator	enum:SW_STATE
+SW_DEBOUNCE_MASK	hardware.h	97;"	macro
+SW_EDGE_MASK	hardware.h	96;"	macro
+SW_FALLING_EDGE	hardware.h	95;"	macro
+SW_HOLD	hardware.h	112;"	enumerator	enum:SW_STATE
+SW_MAKE	hardware.h	101;"	macro
+SW_NONE	hardware.h	112;"	enumerator	enum:SW_STATE
+SW_PRESS	hardware.h	112;"	enumerator	enum:SW_STATE
+SW_RISING_EDGE	hardware.h	94;"	macro
+SW_STATE	hardware.h	110;"	enum
 SetBit	lib\inc\stm8s.h	2788;"	macro
-Set_LCD_E	hardware.h	72;"	macro
-Set_LCD_RS	hardware.h	76;"	macro
-Set_LCD_RW	hardware.h	74;"	macro
-Set_PC3	hardware.h	68;"	macro
-Set_PC4	hardware.h	66;"	macro
-Set_PC5	hardware.h	64;"	macro
-Short_Delay	hardware.c	138;"	function	signature:(void)
-String_LangID	usb\usb_desc.c	95;"	variable
-String_Product	usb\usb_desc.c	111;"	variable
-String_Serial	usb\usb_desc.c	118;"	variable
-String_Vendor	usb\usb_desc.c	102;"	variable
+Short_Delay	hardware.c	390;"	function	signature:(void)
+String_LangID	usb_desc.c	73;"	variable
+String_Product	usb_desc.c	88;"	variable
+String_Serial	usb_desc.c	95;"	variable
+String_Vendor	usb_desc.c	79;"	variable
+Sw_State	hardware.c	256;"	variable	file:
+Sw_Timer	hardware.c	256;"	variable	file:
+Switch_Status	hardware.c	256;"	variable	file:
 TBR	lib\inc\stm8s.h	439;"	member	struct:AWU_struct
 TDRH	lib\inc\stm8s.h	322;"	member	struct:ADC1_struct
 TDRH	lib\inc\stm8s.h	393;"	member	struct:ADC2_struct
 TDRL	lib\inc\stm8s.h	323;"	member	struct:ADC1_struct
 TDRL	lib\inc\stm8s.h	394;"	member	struct:ADC2_struct
-TECR	lib\inc\stm8s.h	2290;"	member	struct:__anon7::__anon8::__anon14
+TECR	lib\inc\stm8s.h	2290;"	member	struct:__anon6::__anon7::__anon13
 TIM1	lib\inc\stm8s.h	2675;"	macro
 TIM1_ARRH_ARR	lib\inc\stm8s.h	776;"	macro
 TIM1_ARRH_RESET_VALUE	lib\inc\stm8s.h	666;"	macro
@@ -1397,7 +1446,6 @@ TIM2_CCR3H_CCR3	lib\inc\stm8s.h	936;"	macro
 TIM2_CCR3H_RESET_VALUE	lib\inc\stm8s.h	872;"	macro
 TIM2_CCR3L_CCR3	lib\inc\stm8s.h	937;"	macro
 TIM2_CCR3L_RESET_VALUE	lib\inc\stm8s.h	873;"	macro
-TIM2_CNTMAX	hardware.h	57;"	macro
 TIM2_CNTRH_CNT	lib\inc\stm8s.h	922;"	macro
 TIM2_CNTRH_RESET_VALUE	lib\inc\stm8s.h	863;"	macro
 TIM2_CNTRL_CNT	lib\inc\stm8s.h	923;"	macro
@@ -1413,18 +1461,13 @@ TIM2_EGR_CC2G	lib\inc\stm8s.h	904;"	macro
 TIM2_EGR_CC3G	lib\inc\stm8s.h	903;"	macro
 TIM2_EGR_RESET_VALUE	lib\inc\stm8s.h	857;"	macro
 TIM2_EGR_UG	lib\inc\stm8s.h	906;"	macro
-TIM2_FREQ	hardware.h	55;"	macro
 TIM2_IER_CC1IE	lib\inc\stm8s.h	891;"	macro
 TIM2_IER_CC2IE	lib\inc\stm8s.h	890;"	macro
 TIM2_IER_CC3IE	lib\inc\stm8s.h	889;"	macro
 TIM2_IER_RESET_VALUE	lib\inc\stm8s.h	854;"	macro
 TIM2_IER_UIE	lib\inc\stm8s.h	892;"	macro
-TIM2_Init	hardware.c	117;"	function	signature:(void)
-TIM2_Init	hardware.h	88;"	prototype	signature:(void)
-TIM2_PRSC	hardware.h	54;"	macro
 TIM2_PSCR_PSC	lib\inc\stm8s.h	925;"	macro
 TIM2_PSCR_RESET_VALUE	lib\inc\stm8s.h	865;"	macro
-TIM2_RELOAD	hardware.h	58;"	macro
 TIM2_SR1_CC1IF	lib\inc\stm8s.h	896;"	macro
 TIM2_SR1_CC2IF	lib\inc\stm8s.h	895;"	macro
 TIM2_SR1_CC3IF	lib\inc\stm8s.h	894;"	macro
@@ -1434,11 +1477,7 @@ TIM2_SR2_CC1OF	lib\inc\stm8s.h	901;"	macro
 TIM2_SR2_CC2OF	lib\inc\stm8s.h	900;"	macro
 TIM2_SR2_CC3OF	lib\inc\stm8s.h	899;"	macro
 TIM2_SR2_RESET_VALUE	lib\inc\stm8s.h	856;"	macro
-TIM2_Slow	hardware.h	56;"	macro
 TIM2_TypeDef	lib\inc\stm8s.h	847;"	typedef	typeref:struct:TIM2_struct
-TIM2_Update_Flag	hardware.c	27;"	variable
-TIM2_Update_IRQ	hardware.c	132;"	function	signature:(void)
-TIM2_Update_IRQ	irq.h	29;"	prototype	signature:(void)
 TIM2_struct	lib\inc\stm8s.h	819;"	struct
 TIM3	lib\inc\stm8s.h	2685;"	macro
 TIM3_ARRH_ARR	lib\inc\stm8s.h	1036;"	macro
@@ -1499,6 +1538,7 @@ TIM4	lib\inc\stm8s.h	2691;"	macro
 TIM4_ARR_ARR	lib\inc\stm8s.h	1105;"	macro
 TIM4_ARR_RESET_VALUE	lib\inc\stm8s.h	1079;"	macro
 TIM4_BaseAddress	lib\inc\stm8s.h	2582;"	macro
+TIM4_CNTMAX	hardware.h	58;"	macro
 TIM4_CNTR_CNT	lib\inc\stm8s.h	1101;"	macro
 TIM4_CNTR_RESET_VALUE	lib\inc\stm8s.h	1077;"	macro
 TIM4_CR1_ARPE	lib\inc\stm8s.h	1089;"	macro
@@ -1509,12 +1549,18 @@ TIM4_CR1_UDIS	lib\inc\stm8s.h	1092;"	macro
 TIM4_CR1_URS	lib\inc\stm8s.h	1091;"	macro
 TIM4_EGR_RESET_VALUE	lib\inc\stm8s.h	1076;"	macro
 TIM4_EGR_UG	lib\inc\stm8s.h	1099;"	macro
+TIM4_FREQ	hardware.h	55;"	macro
 TIM4_IER_RESET_VALUE	lib\inc\stm8s.h	1074;"	macro
 TIM4_IER_UIE	lib\inc\stm8s.h	1095;"	macro
+TIM4_Init	hardware.c	183;"	function	signature:(void)
+TIM4_Init	hardware.h	147;"	prototype	signature:(void)
+TIM4_PRSC	hardware.h	54;"	macro
 TIM4_PSCR_PSC	lib\inc\stm8s.h	1103;"	macro
 TIM4_PSCR_RESET_VALUE	lib\inc\stm8s.h	1078;"	macro
+TIM4_RELOAD	hardware.h	57;"	macro
 TIM4_SR1_RESET_VALUE	lib\inc\stm8s.h	1075;"	macro
 TIM4_SR1_UIF	lib\inc\stm8s.h	1097;"	macro
+TIM4_Slow	hardware.h	56;"	macro
 TIM4_TypeDef	lib\inc\stm8s.h	1067;"	typedef	typeref:struct:TIM4_struct
 TIM4_struct	lib\inc\stm8s.h	1053;"	struct
 TIM5	lib\inc\stm8s.h	2695;"	macro
@@ -1626,16 +1672,21 @@ TIM6_SR1_TIF	lib\inc\stm8s.h	1304;"	macro
 TIM6_SR1_UIF	lib\inc\stm8s.h	1305;"	macro
 TIM6_TypeDef	lib\inc\stm8s.h	1267;"	typedef	typeref:struct:TIM6_struct
 TIM6_struct	lib\inc\stm8s.h	1255;"	struct
+TIMER_CLICK_MAKE	hardware.h	107;"	macro
+TIMER_DBL_BREAK	hardware.h	106;"	macro
+TIMER_LONG	hardware.h	108;"	macro
 TINY	lib\inc\stm8s.h	123;"	macro
 TINY	lib\inc\stm8s.h	129;"	macro
 TINY	lib\inc\stm8s.h	143;"	macro
-TPR	lib\inc\stm8s.h	2174;"	member	struct:__anon7
+TPR	lib\inc\stm8s.h	2174;"	member	struct:__anon6
 TRAP	stm8_interrupt_vector.h	25;"	macro
 TRISER	lib\inc\stm8s.h	1338;"	member	struct:I2C_struct
-TRUE	lib\inc\stm8s.h	230;"	enumerator	enum:__anon3
-TSR	lib\inc\stm8s.h	2173;"	member	struct:__anon7
+TRUE	lib\inc\stm8s.h	230;"	enumerator	enum:__anon2
+TSR	lib\inc\stm8s.h	2173;"	member	struct:__anon6
 TXCRCR	lib\inc\stm8s.h	1700;"	member	struct:SPI_struct
-TxMailbox	lib\inc\stm8s.h	2200;"	member	union:__anon7::__anon8	typeref:struct:__anon7::__anon8::__anon9
+TYPE_HID_DESCRIPTOR	usb_desc.h	42;"	macro
+TYPE_REPORT_DESCRIPTOR	usb_desc.h	43;"	macro
+TxMailbox	lib\inc\stm8s.h	2200;"	member	union:__anon6::__anon7	typeref:struct:__anon6::__anon7::__anon8
 U16_MAX	lib\inc\stm8s.h	242;"	macro
 U32_MAX	lib\inc\stm8s.h	245;"	macro
 U8_MAX	lib\inc\stm8s.h	239;"	macro
@@ -1871,51 +1922,51 @@ UART4_SR_TC	lib\inc\stm8s.h	2101;"	macro
 UART4_SR_TXE	lib\inc\stm8s.h	2100;"	macro
 UART4_TypeDef	lib\inc\stm8s.h	2074;"	typedef	typeref:struct:UART4_struct
 UART4_struct	lib\inc\stm8s.h	2059;"	struct
-USB_CFG_HID_DESCRIPTORS	usb-config.h	21;"	macro
+USB_CFG_HID_DESCRIPTORS	usb-config.h	23;"	macro
 USB_CLOCK_HSI	usb-config.h	8;"	macro
 USB_CONFIG_H_	usb-config.h	2;"	macro
 USB_CONFIG_REMOTE_WAKEUP	usb\usb.h	75;"	macro
 USB_CONFIG_SELF_POWERED	usb\usb.h	74;"	macro
-USB_CONNECT_TIMEOUT	usb-config.h	9;"	macro
-USB_Class_DeInit_callback	main.c	30;"	function	signature:(void)
+USB_CONNECT_TIMEOUT	usb-config.h	10;"	macro
+USB_Class_DeInit_callback	main.c	27;"	function	signature:(void)
 USB_Class_DeInit_callback	usb\usb.h	170;"	prototype	signature:(void)
-USB_Class_Init_callback	main.c	21;"	function	signature:(uint8_t dev_config)
+USB_Class_Init_callback	main.c	18;"	function	signature:(uint8_t dev_config)
 USB_Class_Init_callback	usb\usb.h	169;"	prototype	signature:(uint8_t dev_config)
-USB_DESC_H_	usb\usb_desc.h	2;"	macro
-USB_DESC_TYPE_BOS	usb\usb_desc.h	52;"	macro
-USB_DESC_TYPE_CONFIGURATION	usb\usb_desc.h	46;"	macro
-USB_DESC_TYPE_DEVICE	usb\usb_desc.h	45;"	macro
-USB_DESC_TYPE_DEVICE_QUALIFIER	usb\usb_desc.h	50;"	macro
-USB_DESC_TYPE_ENDPOINT	usb\usb_desc.h	49;"	macro
-USB_DESC_TYPE_INTERFACE	usb\usb_desc.h	48;"	macro
-USB_DESC_TYPE_OTHER_SPEED_CONFIGURATION	usb\usb_desc.h	51;"	macro
-USB_DESC_TYPE_STRING	usb\usb_desc.h	47;"	macro
+USB_DESC_H_	usb_desc.h	2;"	macro
+USB_DESC_TYPE_BOS	usb_desc.h	55;"	macro
+USB_DESC_TYPE_CONFIGURATION	usb_desc.h	49;"	macro
+USB_DESC_TYPE_DEVICE	usb_desc.h	48;"	macro
+USB_DESC_TYPE_DEVICE_QUALIFIER	usb_desc.h	53;"	macro
+USB_DESC_TYPE_ENDPOINT	usb_desc.h	52;"	macro
+USB_DESC_TYPE_INTERFACE	usb_desc.h	51;"	macro
+USB_DESC_TYPE_OTHER_SPEED_CONFIGURATION	usb_desc.h	54;"	macro
+USB_DESC_TYPE_STRING	usb_desc.h	50;"	macro
 USB_DM	usb\usb.h	12;"	macro
 USB_DP	usb\usb.h	11;"	macro
-USB_Device_Request	usb\usb.c	433;"	function	signature:(t_USB_SetupReq *p_USB_SetupReq)
+USB_Device_Request	usb\usb.c	437;"	function	signature:(t_USB_SetupReq *p_USB_SetupReq)
 USB_EP0_RxReady_callback	main.c	10;"	function	signature:(uint8_t *p_data, uint8_t length)
 USB_EP0_RxReady_callback	usb\usb.h	165;"	prototype	signature:(uint8_t *p_data, uint8_t length)
 USB_EP1_RxReady_callback	main.c	54;"	function	signature:(uint8_t *p_data, uint8_t length)
 USB_EP1_RxReady_callback	usb\usb.h	166;"	prototype	signature:(uint8_t *p_data, uint8_t length)
 USB_EP_DATA_READY	usb\usb.h	109;"	enumerator	enum:e_usb_ep_state
 USB_EP_NO_DATA	usb\usb.h	108;"	enumerator	enum:e_usb_ep_state
-USB_EP_WATCHDOG_RECONNECT_DELAY	usb-config.h	15;"	macro
-USB_EP_WATCHDOG_TIMEOUT	usb-config.h	14;"	macro
+USB_EP_WATCHDOG_RECONNECT_DELAY	usb-config.h	16;"	macro
+USB_EP_WATCHDOG_TIMEOUT	usb-config.h	15;"	macro
 USB_FEATURE_EP_HALT	usb\usb.h	70;"	macro
 USB_FEATURE_REMOTE_WAKEUP	usb\usb.h	71;"	macro
 USB_FEATURE_TEST_MODE	usb\usb.h	72;"	macro
-USB_HID_descriptor	usb\usb_desc.h	14;"	macro
+USB_HID_descriptor	usb_desc.h	14;"	macro
 USB_H_	usb\usb.h	2;"	macro
-USB_Handle_GetDescriptor	usb\usb.c	761;"	function	signature:(t_USB_SetupReq *p_USB_SetupReq)
-USB_Handle_Standard_Request	usb\usb.c	593;"	function	signature:(t_USB_SetupReq *p_USB_SetupReq)
-USB_Init	usb\usb.c	38;"	function	signature:(void)
+USB_Handle_GetDescriptor	usb\usb.c	672;"	function	signature:(t_USB_SetupReq *p_USB_SetupReq)
+USB_Handle_Standard_Request	usb\usb.c	603;"	function	signature:(t_USB_SetupReq *p_USB_SetupReq)
+USB_Init	usb\usb.c	40;"	function	signature:(void)
 USB_Init	usb\usb.h	158;"	prototype	signature:(void)
-USB_KeyboardReport_EXT1_Data_t	main.h	33;"	typedef	typeref:struct:__anon24
-USB_KeyboardReport_EXT2_Data_t	main.h	39;"	typedef	typeref:struct:__anon25
-USB_KeyboardReport_STD_Data_t	main.h	26;"	typedef	typeref:struct:__anon23
+USB_KeyboardReport_EXT1_Data_t	main.h	33;"	typedef	typeref:struct:__anon23
+USB_KeyboardReport_EXT2_Data_t	main.h	39;"	typedef	typeref:struct:__anon24
+USB_KeyboardReport_STD_Data_t	main.h	26;"	typedef	typeref:struct:__anon22
 USB_MAX_NUM_CONFIGURATION	usb-config.h	5;"	macro
 USB_MAX_NUM_INTERFACES	usb-config.h	6;"	macro
-USB_NRZI_RX_Decode	usb\usb.c	397;"	function	signature:(uint8_t *p_data, uint8_t length)
+USB_NRZI_RX_Decode	usb\usb.c	401;"	function	signature:(uint8_t *p_data, uint8_t length)
 USB_PID_ACK	usb\usb.h	35;"	enumerator	enum:usb_packets_id_list
 USB_PID_DATA0	usb\usb.h	33;"	enumerator	enum:usb_packets_id_list
 USB_PID_DATA1	usb\usb.h	34;"	enumerator	enum:usb_packets_id_list
@@ -1926,7 +1977,7 @@ USB_PID_SETUP	usb\usb.h	32;"	enumerator	enum:usb_packets_id_list
 USB_PID_STALL	usb\usb.h	37;"	enumerator	enum:usb_packets_id_list
 USB_PORT	usb\usb.h	10;"	macro
 USB_RECIP_MASK	usb\usb.h	47;"	macro
-USB_RECONNECT_DELAY	usb-config.h	10;"	macro
+USB_RECONNECT_DELAY	usb-config.h	11;"	macro
 USB_REQ_CLEAR_FEATURE	usb\usb.h	49;"	macro
 USB_REQ_GET_CONFIGURATION	usb\usb.h	54;"	macro
 USB_REQ_GET_DESCRIPTOR	usb\usb.h	52;"	macro
@@ -1946,7 +1997,7 @@ USB_REQ_TYPE_CLASS	usb\usb.h	66;"	macro
 USB_REQ_TYPE_MASK	usb\usb.h	68;"	macro
 USB_REQ_TYPE_STANDARD	usb\usb.h	65;"	macro
 USB_REQ_TYPE_VENDOR	usb\usb.h	67;"	macro
-USB_RESET_DELAY	usb-config.h	12;"	macro
+USB_RESET_DELAY	usb-config.h	13;"	macro
 USB_Reset	usb\usb.c	18;"	function	signature:(void)
 USB_SELF_POWERED	usb-config.h	7;"	macro
 USB_STAGE_NONE	usb\usb.h	23;"	enumerator	enum:usb_states_list
@@ -1956,28 +2007,26 @@ USB_STATE_ADDRESSED	usb\usb.h	61;"	macro
 USB_STATE_CONFIGURED	usb\usb.h	62;"	macro
 USB_STATE_DEFAULT	usb\usb.h	60;"	macro
 USB_SYNC_BYTE	usb\usb.h	40;"	macro
-USB_Send_Data	usb\usb.c	263;"	function	signature:(uint8_t * buffer, uint8_t length, uint8_t EP_num)
-USB_Send_Data	usb\usb.h	164;"	prototype	signature:(uint8_t * buffer, uint8_t length, uint8_t EP_num)
-USB_Send_STALL	usb\usb.c	384;"	function	signature:(uint8_t EP_num)
-USB_Setup_Request_callback	main.c	45;"	function	signature:(t_USB_SetupReq *p_req)
+USB_Send_Data	usb\usb.c	267;"	function	signature:(uint8_t * buffer, uint16_t length, uint8_t EP_num)
+USB_Send_Data	usb\usb.h	164;"	prototype	signature:(uint8_t * buffer, uint16_t length, uint8_t EP_num)
+USB_Send_STALL	usb\usb.c	388;"	function	signature:(uint8_t EP_num)
+USB_Setup_Request_callback	main.c	37;"	function	signature:(t_USB_SetupReq *p_req)
 USB_Setup_Request_callback	usb\usb.h	168;"	prototype	signature:(t_USB_SetupReq *p_req)
-USB_String_Descriptors	usb\usb_desc.c	125;"	variable
-USB_String_Descriptors_Length	usb\usb_desc.c	133;"	variable
-USB_connect	usb\usb.c	95;"	function	signature:(void)
+USB_String_Descriptors	usb_desc.c	102;"	variable
+USB_String_Descriptors_Length	usb_desc.c	109;"	variable
+USB_Tx_Ready	usb\usb.h	174;"	macro
+USB_connect	usb\usb.c	99;"	function	signature:(void)
 USB_connect	usb\usb.h	160;"	prototype	signature:(void)
-USB_disconnect	usb\usb.c	101;"	function	signature:(void)
+USB_disconnect	usb\usb.c	105;"	function	signature:(void)
 USB_disconnect	usb\usb.h	161;"	prototype	signature:(void)
-USB_loop	usb\usb.c	802;"	function	signature:(void)
+USB_loop	usb\usb.c	713;"	function	signature:(void)
 USB_loop	usb\usb.h	159;"	prototype	signature:(void)
-USB_slow_loop	usb\usb.c	846;"	function	signature:(void)
+USB_slow_loop	usb\usb.c	760;"	function	signature:(void)
 USB_slow_loop	usb\usb.h	162;"	prototype	signature:(void)
 USE_STDPERIPH_DRIVER	lib\inc\stm8s.h	95;"	macro
-US_DELAY	hardware.h	98;"	macro
-UsagePage	main.h	14;"	member	struct:__anon22
+US_DELAY	hardware.h	91;"	macro
+UsagePage	main.h	14;"	member	struct:__anon21
 VECTOR_ID	lib\inc\stm8s.h	2758;"	macro
-VERSION_MAJOR	main.c	39;"	macro	file:
-VERSION_MINOR	main.c	40;"	macro	file:
-VERSION_STR	main.c	41;"	macro	file:
 ValBit	lib\inc\stm8s.h	2797;"	macro
 WDG_EP_timeout	usb\usb.h	151;"	member	struct:usb_type
 WR	lib\inc\stm8s.h	1631;"	member	struct:WWDG_struct
@@ -1999,7 +2048,8 @@ WWDG_WR_W	lib\inc\stm8s.h	1655;"	macro
 WWDG_struct	lib\inc\stm8s.h	1628;"	struct
 _COSMIC_	lib\inc\stm8s.h	82;"	macro
 _IAR_	lib\inc\stm8s.h	86;"	macro
-_OPT2	hardware.h	51;"	enum
+_LED	hardware.h	67;"	enum
+_OPT2	hardware.h	48;"	enum
 _PA	hardware.h	38;"	enum
 _PB	hardware.h	39;"	enum
 _PC	hardware.h	40;"	enum
@@ -2024,21 +2074,19 @@ __STM8S_WWDG_H	lib\inc\stm8s_wwdg.h	30;"	macro
 _stext	stm8_interrupt_vector.c	33;"	prototype	file:
 _vectab	stm8_interrupt_vector.c	38;"	variable
 active_EP_num	usb\usb.h	137;"	member	struct:usb_type
-addr	main.h	65;"	member	struct:__anon28	typeref:union:__anon28::__anon29
-addr_16	main.h	64;"	member	union:__anon28::__anon29
-addr_8	main.h	63;"	member	union:__anon28::__anon29	typeref:struct:__anon28::__anon29::__anon30
+addr	main.h	65;"	member	struct:__anon27	typeref:union:__anon27::__anon28
+addr_16	main.h	64;"	member	union:__anon27::__anon28
+addr_8	main.h	63;"	member	union:__anon27::__anon28	typeref:struct:__anon27::__anon28::__anon29
 assert_failed	lib\inc\stm8s_conf.h	57;"	prototype	signature:(uint8_t* file, uint32_t line)
 assert_param	lib\inc\stm8s_conf.h	55;"	macro
 assert_param	lib\inc\stm8s_conf.h	59;"	macro
 bRequest	usb\usb.h	97;"	member	struct:usb_setup_req
 bmRequest	usb\usb.h	96;"	member	struct:usb_setup_req
-bool	lib\inc\stm8s.h	230;"	typedef	typeref:enum:__anon3
-cmd	main.h	58;"	member	struct:__anon28
-code	hardware.h	102;"	member	struct:__anon2
-count	hardware.h	103;"	member	struct:__anon2
-data	main.h	72;"	member	struct:__anon28	typeref:union:__anon28::__anon31
-data_16	main.h	71;"	member	union:__anon28::__anon31
-data_8	main.h	70;"	member	union:__anon28::__anon31	typeref:struct:__anon28::__anon31::__anon32
+bool	lib\inc\stm8s.h	230;"	typedef	typeref:enum:__anon2
+cmd	main.h	58;"	member	struct:__anon27
+data	main.h	72;"	member	struct:__anon27	typeref:union:__anon27::__anon30
+data_16	main.h	71;"	member	union:__anon27::__anon30
+data_8	main.h	70;"	member	union:__anon27::__anon30	typeref:struct:__anon27::__anon30::__anon31
 delay_counter	usb\usb.h	147;"	member	struct:usb_type
 dev_config	usb\usb.h	139;"	member	struct:usb_type
 dev_config_status	usb\usb.h	143;"	member	struct:usb_type
@@ -2064,11 +2112,8 @@ int8_t	lib\inc\stm8s.h	210;"	typedef
 irq	stm8_interrupt_vector.c	29;"	member	struct:__anon1	file:
 irq_handler	stm8_interrupt_vector.c	30;"	member	struct:__anon1	file:
 irq_vectors	stm8_interrupt_vector.c	31;"	typedef	typeref:struct:__anon1	file:
-key	hardware.c	28;"	variable
-key_num	main.h	44;"	member	struct:__anon26
-key_num	main.h	51;"	member	struct:__anon27
-key_t	hardware.h	104;"	typedef	typeref:struct:__anon2
-keys	hardware.h	117;"	enum
+key_num	main.h	44;"	member	struct:__anon25
+key_num	main.h	51;"	member	struct:__anon26
 ll_usb_rx	irq.h	26;"	prototype	signature:(void)
 ll_usb_rx_buffer	usb\usb.c	5;"	variable
 ll_usb_rx_count	usb\usb.c	8;"	variable
@@ -2076,6 +2121,7 @@ ll_usb_tx	usb\usb.c	16;"	prototype	file:	signature:(void)
 ll_usb_tx_buffer_pointer	usb\usb.c	6;"	variable
 ll_usb_tx_count	usb\usb.c	7;"	variable
 main	main.c	61;"	function	signature:(void)
+ms_TO_TICKS	hardware.h	104;"	macro
 nop	lib\inc\stm8s.h	2719;"	macro
 nop	lib\inc\stm8s.h	2728;"	macro
 nop	lib\inc\stm8s.h	2738;"	macro
@@ -2085,7 +2131,6 @@ prev_key_mask	main.h	88;"	member	struct:s_HID_Dev
 printf	..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h	17;"	prototype	signature:(char *format, ...)
 putchar	..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h	18;"	prototype	signature:(char c)
 puts	..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h	19;"	prototype	signature:(char *s)
-replyBuf	main.c	43;"	variable
 reset_counter	usb\usb.h	142;"	member	struct:usb_type
 rim	lib\inc\stm8s.h	2717;"	macro
 rim	lib\inc\stm8s.h	2726;"	macro
@@ -2107,11 +2152,11 @@ size_t	..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h
 sprintf	..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h	22;"	prototype	signature:(char *s, char *format, ...)
 sscanf	..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdio.h	21;"	prototype	signature:(char *s, char *format, ...)
 stage	usb\usb.h	134;"	member	struct:usb_type
-t_Debug_dev_report	main.h	73;"	typedef	typeref:struct:__anon28
+t_Debug_dev_report	main.h	73;"	typedef	typeref:struct:__anon27
 t_HID_Dev	main.h	90;"	typedef	typeref:struct:s_HID_Dev
-t_KeyCode	main.h	18;"	typedef	typeref:struct:__anon22
-t_Key_settings	main.h	46;"	typedef	typeref:struct:__anon26
-t_Key_settings_to_write	main.h	53;"	typedef	typeref:struct:__anon27
+t_KeyCode	main.h	18;"	typedef	typeref:struct:__anon21
+t_Key_settings	main.h	46;"	typedef	typeref:struct:__anon25
+t_Key_settings_to_write	main.h	53;"	typedef	typeref:struct:__anon26
 t_USB_EP	usb\usb.h	121;"	typedef	typeref:struct:s_USB_EP
 t_USB_SetupReq	usb\usb.h	104;"	typedef	typeref:struct:usb_setup_req
 t_usb_ep_state	usb\usb.h	110;"	typedef	typeref:enum:e_usb_ep_state
@@ -2130,16 +2175,16 @@ uint16_t	lib\inc\stm8s.h	216;"	typedef
 uint32_t	lib\inc\stm8s.h	217;"	typedef
 uint8_t	lib\inc\stm8s.h	215;"	typedef
 usb	usb\usb.c	9;"	variable	typeref:struct:usb_type
-usb_calc_crc16	usb\usb.c	234;"	function	signature:(uint8_t * buffer, uint8_t length)
-usb_configuration_descriptor	usb\usb_desc.c	21;"	variable
-usb_control_error	usb\usb.c	392;"	function	signature:(void)
-usb_copy_rx_packet	usb\usb.c	135;"	function	signature:(uint8_t EP_num)
-usb_device_descriptor	usb\usb_desc.c	3;"	variable
+usb_calc_crc16	usb\usb.c	238;"	function	signature:(uint8_t * buffer, uint8_t length)
+usb_configuration_descriptor	usb_desc.c	25;"	variable
+usb_control_error	usb\usb.c	396;"	function	signature:(void)
+usb_copy_rx_packet	usb\usb.c	139;"	function	signature:(uint8_t EP_num)
+usb_device_descriptor	usb_desc.c	3;"	variable
 usb_packets_id_list	usb\usb.h	28;"	enum
-usb_rx_ok	usb\usb.c	148;"	function	signature:(void)
-usb_send_ack	usb\usb.c	119;"	function	signature:(void)
-usb_send_nack	usb\usb.c	110;"	function	signature:(void)
-usb_send_packet	usb\usb.c	128;"	function	signature:(uint8_t EP_num)
+usb_rx_ok	usb\usb.c	152;"	function	signature:(void)
+usb_send_ack	usb\usb.c	123;"	function	signature:(void)
+usb_send_nack	usb\usb.c	114;"	function	signature:(void)
+usb_send_packet	usb\usb.c	132;"	function	signature:(uint8_t EP_num)
 usb_setup_req	usb\usb.h	94;"	struct
 usb_states_list	usb\usb.h	21;"	enum
 usb_type	usb\usb.h	132;"	struct
@@ -2152,4 +2197,4 @@ wValue_LO	usb\usb.h	98;"	member	struct:usb_setup_req
 wfi	lib\inc\stm8s.h	2721;"	macro
 wfi	lib\inc\stm8s.h	2730;"	macro
 wfi	lib\inc\stm8s.h	2740;"	macro
-write_flag	main.h	50;"	member	struct:__anon27
+write_flag	main.h	50;"	member	struct:__anon26

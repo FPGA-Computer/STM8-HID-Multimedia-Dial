@@ -52,68 +52,68 @@ void RESET_CHIP(void)
 	while(1);    // Wait until reset occurs from IWDG
 }
 
+void FLASH_Data_lock(uint8_t lock)
+{
+	if(lock)
+		FLASH->IAPSR = 0;
+	else
+	{
+		/* Warning: keys are reversed on data memory !!! */
+    FLASH->DUKR = FLASH_RASS_KEY2;
+    FLASH->DUKR = FLASH_RASS_KEY1;		
+	}
+}
+
+void FLASH_Wait(void)
+{
+	while(!(uint8_t)(FLASH->IAPSR & (FLASH_IAPSR_EOP | FLASH_IAPSR_WR_PG_DIS)))
+		/* wait*/;
+}
+
 void Check_OPTION_BYTE(void)
 {
 	uint8_t option_byte;
-	uint8_t option_byte_neg;
-	uint16_t option_byte_addr;
-	// 0 - ROP
-	// 1,2 - UBC
-	// 3,4 - AFR
-	// 5,6 - options
-	
-	option_byte_addr = OPTION_BYTE_START_PHYSICAL_ADDRESS + 3; // AFR
-	option_byte = *((NEAR uint8_t*)option_byte_addr);
-	option_byte_neg = *((NEAR uint8_t*)(option_byte_addr + 1));
-	if ((option_byte != (uint8_t)(~option_byte_neg)) ||
-	((option_byte & OPTION_BYTE) == 0)) { // check AFR0
-		option_byte |= OPTION_BYTE; // set AFR0 = 1 // PORT C[7..5] Alternate Function
 
-		FLASH_Unlock(FLASH_MEMTYPE_DATA);
-
+	if ((OPT->OPT2 != (uint8_t)(~OPT->NOPT2))||((OPT->OPT2 & AFR0) == 0)) 
+	{ // check AFR0
+		option_byte = OPT->OPT2|AFR0; 		// set AFR0 = 1 // PORT C[7..5] Alternate Function
+		
+		FLASH_Data_lock(0);
 		FLASH->CR2 |= FLASH_CR2_OPT;
 		FLASH->NCR2 &= (uint8_t)(~FLASH_NCR2_NOPT);
-		// Program option byte and his complement
-		do {
-			*((NEAR uint8_t*)option_byte_addr) = option_byte;
-			FLASH_WaitForLastOperation(FLASH_MEMTYPE_PROG);
-		} while(*((NEAR uint8_t*)option_byte_addr) != option_byte);
-		do {
-			*((NEAR uint8_t*)((uint16_t)(option_byte_addr + 1))) = (uint8_t)(~option_byte);
-			FLASH_WaitForLastOperation(FLASH_MEMTYPE_PROG);
-		} while(*((NEAR uint8_t*)((uint16_t)(option_byte_addr + 1))) != (uint8_t)(~option_byte));
+
+		OPT->OPT2 = option_byte;
+		FLASH_Wait();
+
+		OPT->NOPT2 = (uint8_t)(~option_byte);
+		FLASH_Wait();
 		
 		// Disable write access to option bytes
 		FLASH->CR2 &= (uint8_t)(~FLASH_CR2_OPT);
 		FLASH->NCR2 |= FLASH_NCR2_NOPT;
 
-		FLASH_Lock(FLASH_MEMTYPE_DATA);
+		FLASH_Data_lock(1);
     RESET_CHIP();
 	}
-
-	option_byte_addr = OPTION_BYTE_START_PHYSICAL_ADDRESS + 5; // options
-	option_byte = *((NEAR uint8_t*)option_byte_addr);
-	option_byte_neg = *((NEAR uint8_t*)(option_byte_addr + 1));
-	if ((option_byte != (uint8_t)(~option_byte_neg)) ||
-	((option_byte & (1 << 4)) == 0)) { // check HSITRIM
-		option_byte |= (1 << 4); // set HSITRIM = 1 // 4 bit on-the-fly trimming
-		FLASH_Unlock(FLASH_MEMTYPE_DATA);
+	
+	if ((OPT->OPT3 != (uint8_t)(~OPT->NOPT3))||((OPT->OPT3 & HSITRIM) == 0)) 
+	{ // check HSITRIM
+		option_byte = OPT->OPT3|HSITRIM;			// 4 bit on-the-fly trimming
+		
+		FLASH_Data_lock(0);
 		FLASH->CR2 |= FLASH_CR2_OPT;
 		FLASH->NCR2 &= (uint8_t)(~FLASH_NCR2_NOPT);
-		// Program option byte and his complement
-		do {
-			*((NEAR uint8_t*)option_byte_addr) = option_byte;
-			FLASH_WaitForLastOperation(FLASH_MEMTYPE_PROG);
-		} while(*((NEAR uint8_t*)option_byte_addr) != option_byte);
-		do {
-			*((NEAR uint8_t*)((uint16_t)(option_byte_addr + 1))) = (uint8_t)(~option_byte);
-			FLASH_WaitForLastOperation(FLASH_MEMTYPE_PROG);
-		} while(*((NEAR uint8_t*)((uint16_t)(option_byte_addr + 1))) != (uint8_t)(~option_byte));
+
+		OPT->OPT3 = option_byte;
+		FLASH_Wait();
+
+		OPT->NOPT3 = (uint8_t)(~option_byte);
+		FLASH_Wait();
 		
 		// Disable write access to option bytes
 		FLASH->CR2 &= (uint8_t)(~FLASH_CR2_OPT);
 		FLASH->NCR2 |= FLASH_NCR2_NOPT;
-		FLASH_Lock(FLASH_MEMTYPE_DATA);
+		FLASH_Data_lock(1);
     RESET_CHIP();
 	}
 }
@@ -148,7 +148,7 @@ void Encoder_Init(void)
 {
 	EXTI->CR1 = EXTI_CR1;			// Rising and falling edges
 	// Encoder GPIO interrupt mask
-	ENC_CLK_PORT->CR2 |=  ENC_CLK;
+	ENC_PORT->CR2 |=  ENC_CLK;
 	// pull up on Switch
 	ENC_SW_PORT->CR1 |= ENC_SW;
 	
@@ -161,12 +161,13 @@ void Encoder_Init(void)
 	LED_B_PORT->DDR |= LED_B;
 }
 
+/*
 @far @interrupt void Encoder_IRQ(void)
 {
 	static uint8_t Encoder_Prev;
   uint8_t Enc_Status;
 	
-  Enc_Status = (ENC_CLK_PORT->IDR & ENC_CLK)|(ENC_DIR_PORT->IDR & ENC_DIR);	
+  Enc_Status = (ENC_PORT->IDR & (ENC_CLK|ENC_DIR);	
 	
   if((Encoder_Prev == ENC_DIR) && (Enc_Status == ENC_CLK))
     Encoder_--;    
@@ -174,6 +175,20 @@ void Encoder_Init(void)
     Encoder_++;
 
   Encoder_Prev = Enc_Status;
+}
+*/
+
+// optimized code
+@far @interrupt void Encoder_IRQ(void)
+{
+  static uint8_t Enc_Status;
+	
+	Enc_Status = (Enc_Status<<2)|(ENC_PORT->IDR&(ENC_CLK|ENC_DIR));	
+	
+	if(Enc_Status == ((ENC_DIR<<2)|ENC_CLK))
+    Encoder_--;
+	else if(Enc_Status == (ENC_CLK|ENC_DIR))
+    Encoder_++;
 }
 
 static uint8_t Switch_Status = SW_EDGE_MASK, Sw_Timer, Sw_State = SW_NONE, Enc_State = ENC_VOLUME;

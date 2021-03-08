@@ -46,7 +46,10 @@ enum _PD { PD1=0x02, PD2=0x04, PD3=0x08, PD4=0x10, PD5=0x20, PD6=0x40 };
 #define EE_Addr					0x4000
 
 enum _OPT2 { AFR0 = 0x01, AFR1=0x02, AFR2=0x04, AFR3=0x08, AFR4=0x10, AFR5=0x20, AFR6=0x40, AFR7 = 0x80 };
-#define OPTION_BYTE			AFR0
+enum _OPT3 { HSITRIM = 0x10, LSI_EN = 0x08, IWDG_HW = 0x04, WWDG_HW = 0x02, WWDG_HALT = 0x01 };
+
+#define FLASH_RASS_KEY1 ((uint8_t)0x56) /*!< First RASS key */
+#define FLASH_RASS_KEY2 ((uint8_t)0xAE)
 
 #define TIM4_PRSC				7
 #define TIM4_FREQ				500
@@ -70,9 +73,8 @@ enum _LED
 	LED_WHITE = LED_RED|LED_GREEN|LED_BLUE
 };
 
-#define ENC_CLK_PORT		GPIOC
+#define ENC_PORT				GPIOC
 #define ENC_CLK					PC5
-#define ENC_DIR_PORT		GPIOC
 #define ENC_DIR					PC4
 #define ENC_SW_PORT			GPIOC
 #define ENC_SW					PC3
@@ -149,5 +151,6 @@ void Encoder_Init(void);
 void Encoder_Switch_Task(void);
 void Encoder_Task(void);
 void HID_Task(void);
-
+void FLASH_Data_lock(uint8_t lock);
+void FLASH_Wait(void);
 #endif

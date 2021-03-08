@@ -74,7 +74,7 @@ String.6.0=2020,9,9,18,9,5
 String.100.0=$(TargetFName)
 String.101.0=
 String.102.0=
-String.103.0=.\;usb;lib\src;lib\inc;
+String.103.0=.\;usb;lib\inc;
 
 [Root.Config.0.Settings.2]
 String.2.0=
@@ -158,7 +158,7 @@ Int.108=0
 String.6.0=2020,9,9,18,9,5
 String.100.0=$(TargetFName)
 String.101.0=
-String.103.0=.\;usb;lib\src;lib\inc;
+String.103.0=.\;usb;lib\inc;
 
 [Root.Config.1.Settings.2]
 String.2.0=
@@ -316,11 +316,6 @@ PathName=usb\usb_tx.s
 [Root.Source Files.hardware.c]
 ElemType=File
 PathName=hardware.c
-Next=Root.Source Files.lib\src\stm8s_flash.c
-
-[Root.Source Files.lib\src\stm8s_flash.c]
-ElemType=File
-PathName=lib\src\stm8s_flash.c
 Next=Root.Source Files.main.c
 
 [Root.Source Files.main.c]
