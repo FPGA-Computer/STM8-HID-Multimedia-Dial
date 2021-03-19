@@ -789,7 +789,7 @@ void USB_slow_loop(void)
 		} 
 		else if (usb.trimming_stage == HSI_TRIMMER_WRITE_TRIM_VAL)
 		{
-			FLASH_Unlock(FLASH_MEMTYPE_DATA);
+			FLASH_Data_lock(0);
 			*p_HSI_TRIM_VAL = usb.HSI_Trim_val;
 			*p_HSI_TRIMING_DONE = MAGIC_VAL;
 			usb.trimming_stage = HSI_TRIMMER_DISABLE;

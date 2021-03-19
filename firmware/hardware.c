@@ -167,7 +167,7 @@ void Encoder_Init(void)
 	static uint8_t Encoder_Prev;
   uint8_t Enc_Status;
 	
-  Enc_Status = (ENC_PORT->IDR & (ENC_CLK|ENC_DIR);	
+  Enc_Status = (ENC_PORT->IDR & (ENC_CLK|ENC_DIR));	
 	
   if((Encoder_Prev == ENC_DIR) && (Enc_Status == ENC_CLK))
     Encoder_--;    
@@ -292,13 +292,13 @@ void Encoder_Task(void)
     if(Encoder >0)
     {
       Encoder--;
-      ReportIn[1]|= (Enc_State == ENC_VOLUME)?Cmd_Volume_Up:Cmd_Next_Track;
+      ReportIn[EP1]|= (Enc_State == ENC_VOLUME)?Cmd_Volume_Up:Cmd_Next_Track;
       Report_State = REPORT_CMD;
     }
     else if (Encoder <0)
     {
       Encoder++;
-      ReportIn[1]|= (Enc_State == ENC_VOLUME)?Cmd_Volume_Down:Cmd_Prev_Track;
+      ReportIn[EP1]|= (Enc_State == ENC_VOLUME)?Cmd_Volume_Down:Cmd_Prev_Track;
       Report_State = REPORT_CMD;
     }
   }    
@@ -306,19 +306,19 @@ void Encoder_Task(void)
 
 void HID_Task(void)
 {
-  if ((Report_State != REPORT_RDY) && USB_Tx_Ready(1))
+  if ((Report_State != REPORT_RDY) && USB_Tx_Ready(EP1))
   {
     switch(Report_State)
     {
       case REPORT_CMD:
-				USB_Send_Data(ReportIn,REPORT_SIZE,1);
+				USB_Send_Data(ReportIn,REPORT_SIZE,EP1);
         Report_State = REPORT_CMD_RELEASE;
         break;
         
       case REPORT_CMD_RELEASE:
         // clear all bits in report
-        ReportIn[1] = 0;
-				USB_Send_Data(ReportIn,REPORT_SIZE,1);
+        ReportIn[EP1] = 0;
+				USB_Send_Data(ReportIn,REPORT_SIZE,EP1);
         Report_State = REPORT_RDY;
         break;
     }
